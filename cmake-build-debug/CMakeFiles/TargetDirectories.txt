@@ -1,4 +1,6 @@
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/Codes.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/LinkedList-Implementation.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/Stacks.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/StackAppBalancedParenthesis.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
