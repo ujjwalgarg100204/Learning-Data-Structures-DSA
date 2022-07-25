@@ -34,16 +34,20 @@ bool hasBalancedBrackets(String expression);
 bool isEmpty(Stack *stack);
 
 int main(void) {
+    int testCases;
+    scanf("%d", &testCases);
+
     // take expression as input
     String expression = malloc(sizeof(char) * MAX_SIZE);
-    fgets(expression, MAX_SIZE, stdin);
+    while (testCases-- > 0) {
+        scanf("%s", expression);
 
-    if (hasBalancedBrackets(expression)) {
-        printf("The given expression has balanced brackets.");
-    } else {
-        printf("This given expression does not have balanced brackets.");
+        if (hasBalancedBrackets(expression)) {
+            printf("The given expression has balanced brackets.\n");
+        } else {
+            printf("This given expression does not have balanced brackets.\n");
+        }
     }
-
     free(expression);
 }
 

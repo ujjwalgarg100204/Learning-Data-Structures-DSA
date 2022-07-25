@@ -11,6 +11,7 @@ add_executable(LinkedList-Implementation LinkedList/Implementation.c)
 # Stacks
 add_executable(Stacks Stack/ImplementationUsingDynamicArrays.c)
 add_executable(StackAppBalancedParenthesis Stack/Application/BalancedParenthesis.c)
+add_executable(StackAppExpressionChanger Stack/Application/ExpressionChanger.c)
 
 
 
