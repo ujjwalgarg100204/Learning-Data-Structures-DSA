@@ -36,9 +36,13 @@ bool isEmpty(Stack *stack);
 
 String infixToPostFix(String expression);
 
+String infixToPostFixWithBrackets(String expression);
+
 int higherPriority(char operator1, char operator2);
 
 int findIndexOf(const char arr[], int size, char c);
+
+int lengthWithoutBrackets(const char *str);
 
 int main(void) {
     int testCases;
@@ -49,7 +53,8 @@ int main(void) {
     while (testCases-- > 0) {
         scanf("%s", expression);
 
-        String postFix = infixToPostFix(expression);
+//        String postFix = infixToPostFix(expression);
+        String postFix = infixToPostFixWithBrackets(expression);
         printf("%s\n", postFix);
         free(postFix);
     }
@@ -72,8 +77,10 @@ String infixToPostFix(String expression) {
             // if stack's top is an operator of more or equal priority then put the top of stack in result, and push current
             // operator in stack
             if (!isEmpty(operator) && higherPriority(poll(operator), expression[i]) >= 0) {
-                result[j++] = poll(operator);
-                pop(operator);
+                while (!isEmpty(operator) && higherPriority(poll(operator), expression[i]) >= 0) {
+                    result[j++] = poll(operator);
+                    pop(operator);
+                }
                 push(operator, expression[i]);
             } else {
                 push(operator, expression[i]);
@@ -89,6 +96,47 @@ String infixToPostFix(String expression) {
 
     freeStack(operator);
     return result;
+}
+
+String infixToPostFixWithBrackets(String expression) {
+    Stack *stack = newStack();
+
+    String postFix = malloc(sizeof(char) * (lengthWithoutBrackets(expression) + 1));
+    int j = 0;
+    for (int i = 0; expression[i] != '\0'; i++) {
+        if (isdigit(expression[i])) {
+            postFix[j++] = expression[i];
+        } else if (isEmpty(stack) || expression[i] == '(' || poll(stack) == '(' ||
+                   higherPriority(poll(stack), expression[i]) < 0) {
+            // push operator to stack in case stack is empty or top of stack is '('
+            push(stack, expression[i]);
+        } else if (expression[i] == ')') {
+            while (poll(stack) != '(') {
+                postFix[j++] = poll(stack);
+                pop(stack);
+            }
+            pop(stack); // remove '(' from stack
+        } else {
+            // priority of current operator is equal to less than top of stack
+//            printf("Here\n");
+//            printf("poll(stack) = %c\n", poll(stack));
+            while (!isEmpty(stack) && higherPriority(poll(stack), expression[i]) >= 0) {
+                postFix[j++] = poll(stack);
+                pop(stack);
+            }
+            push(stack, expression[i]);
+        }
+    }
+
+    while (!isEmpty(stack)) {
+        postFix[j++] = poll(stack);
+        pop(stack);
+    }
+    freeStack(stack);
+
+    postFix[j] = '\0';
+
+    return postFix;
 }
 
 #pragma clang diagnostic pop
@@ -154,6 +202,17 @@ char poll(Stack *stack) {
 
 bool isEmpty(Stack *stack) {
     return stack->size == 0;
+}
+
+int lengthWithoutBrackets(const char *str) {
+    int length = 0;
+    for (int i = 0; str[i] != '\0'; ++i) {
+        if (str[i] == '(' || str[i] == ')') {
+            continue;
+        }
+        length++;
+    }
+    return length;
 }
 
 
