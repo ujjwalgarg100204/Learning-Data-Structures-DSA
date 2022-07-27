@@ -38,11 +38,15 @@ String infixToPostFix(String expression);
 
 String infixToPostFixWithBrackets(String expression);
 
+String infixToPrefixWithBrackets(String expression);
+
 int higherPriority(char operator1, char operator2);
 
 int findIndexOf(const char arr[], int size, char c);
 
 int lengthWithoutBrackets(const char *str);
+
+String strrev(String str);
 
 int main(void) {
     int testCases;
@@ -53,10 +57,11 @@ int main(void) {
     while (testCases-- > 0) {
         scanf("%s", expression);
 
-//        String postFix = infixToPostFix(expression);
-        String postFix = infixToPostFixWithBrackets(expression);
-        printf("%s\n", postFix);
-        free(postFix);
+//        String result = infixToPostFix(expression);
+//        String result = infixToPostFixWithBrackets(expression);
+        String result = infixToPrefixWithBrackets(expression);
+        printf("%s\n", result);
+        free(result);
     }
     free(expression);
 }
@@ -71,7 +76,7 @@ String infixToPostFix(String expression) {
     int j = 0;
     for (int i = 0; i < length; ++i) {
         // if digit found put it in result
-        if (isdigit(expression[i])) {
+        if (isalnum(expression[i])) {
             result[j++] = expression[i];
         } else {
             // if stack's top is an operator of more or equal priority then put the top of stack in result, and push current
@@ -98,13 +103,51 @@ String infixToPostFix(String expression) {
     return result;
 }
 
+String infixToPrefixWithBrackets(String expression) {
+    Stack *stack = newStack();
+    String prefix = malloc(sizeof(char) * (lengthWithoutBrackets(expression) + 1));
+    int length = strlen(expression);
+
+    // last char is '\0' which is not counted in strlen method so i = length works
+    int j = 0;
+    for (int i = length; i >= 0; --i) {
+        if (isalnum(expression[i])) {
+            prefix[j++] = expression[i];
+        } else if (isEmpty(stack) || expression[i] == ')' || higherPriority(poll(stack), expression[i]) <= 0) {
+            push(stack, expression[i]);
+        } else if (expression[i] == '(') {
+            // empty the stack till I find ')'
+            while (poll(stack) != ')') {
+                prefix[j++] = poll(stack);
+                pop(stack);
+            }
+            pop(stack); // remove ')'
+        } else {
+            while (!isEmpty(stack) && higherPriority(poll(stack), expression[i]) > 0) {
+                prefix[j++] = poll(stack);
+                pop(stack);
+            }
+            push(stack, expression[i]);
+        }
+    }
+
+    while (!isEmpty(stack)) {
+        prefix[j++] = poll(stack);
+        pop(stack);
+    }
+    prefix[j] = '\0';
+    freeStack(stack);
+    return strrev(prefix);
+}
+
+
 String infixToPostFixWithBrackets(String expression) {
     Stack *stack = newStack();
 
     String postFix = malloc(sizeof(char) * (lengthWithoutBrackets(expression) + 1));
     int j = 0;
     for (int i = 0; expression[i] != '\0'; i++) {
-        if (isdigit(expression[i])) {
+        if (isalnum(expression[i])) {
             postFix[j++] = expression[i];
         } else if (isEmpty(stack) || expression[i] == '(' || poll(stack) == '(' ||
                    higherPriority(poll(stack), expression[i]) < 0) {
@@ -137,6 +180,17 @@ String infixToPostFixWithBrackets(String expression) {
     postFix[j] = '\0';
 
     return postFix;
+}
+
+
+String strrev(String str) {
+    int length = strlen(str);
+    for (int i = 0; i < length / 2; ++i) {
+        char temp = str[i];
+        str[i] = str[length - i - 1];
+        str[length - i - 1] = temp;
+    }
+    return str;
 }
 
 #pragma clang diagnostic pop
@@ -205,7 +259,7 @@ bool isEmpty(Stack *stack) {
 }
 
 int lengthWithoutBrackets(const char *str) {
-    int length = 0;
+    int length = 1;
     for (int i = 0; str[i] != '\0'; ++i) {
         if (str[i] == '(' || str[i] == ')') {
             continue;
