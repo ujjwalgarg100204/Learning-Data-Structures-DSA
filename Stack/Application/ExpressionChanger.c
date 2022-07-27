@@ -6,6 +6,8 @@
 #include <string.h>
 #include <ctype.h>
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "DanglingPointer"
 #define MAX_SIZE 100
 
 // implementing stack with array
@@ -54,10 +56,13 @@ int main(void) {
     free(expression);
 }
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "DanglingPointer"
+
 String infixToPostFix(String expression) {
     Stack *operator = newStack();
-    int length = strlen(expression);
-    String result = malloc(sizeof(char) * length);
+    int length = strlen(expression); // NOLINT(cppcoreguidelines-narrowing-conversions)
+    String result = malloc(sizeof(char) * length + 1);
     int j = 0;
     for (int i = 0; i < length; ++i) {
         // if digit found put it in result
@@ -80,11 +85,13 @@ String infixToPostFix(String expression) {
         result[j++] = poll(operator);
         pop(operator);
     }
-//    result[j] = '\0';
+    result[j] = '\0';
 
     freeStack(operator);
     return result;
 }
+
+#pragma clang diagnostic pop
 
 int higherPriority(char operator1, char operator2) {
     char priorityOfOperator[] = {'-', '+', '*', '/', '^'};
@@ -150,3 +157,4 @@ bool isEmpty(Stack *stack) {
 }
 
 
+#pragma clang diagnostic pop
