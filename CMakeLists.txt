@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.23)
-project(DSA1 C)
+cmake_minimum_required(VERSION 3.22)
+project(Data-Structures-and-Algorithm C)
 
 set(CMAKE_C_STANDARD 99)
 
@@ -21,6 +21,3 @@ add_subdirectory(linked_list/implementation)
 
 add_executable(LinkedList-Main linked_list/main.c)  # add the executable
 target_link_libraries(LinkedList-Main PUBLIC linked_list)
-
-
-

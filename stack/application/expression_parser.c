@@ -136,8 +136,7 @@ String infixToPrefix(String infix) {
 double evaluatePrefix(String prefix) {
     StackD *stack = newStackD();
     int length = (int) strlen(prefix);
-
-    for (int i = length; i >= 0; --i) {
+    for (int i = length - 1; i >= 0; --i) {
         if (isdigit(prefix[i])) {
             pushD(stack, charToDouble(prefix[i]));
         } else {
