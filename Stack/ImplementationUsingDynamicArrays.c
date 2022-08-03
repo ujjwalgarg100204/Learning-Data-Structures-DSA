@@ -26,19 +26,6 @@ Stack *newStack(int firstElement);
 
 void freeStack(Stack *stack);
 
-int main(void) {
-    Stack *stack = newStack(1);
-    add(stack, 2);
-    add(stack, 3);
-    add(stack, 4);
-    add(stack, 5);
-    add(stack, 6);
-
-    printAndEmptyStack(stack);
-
-    freeStack(stack);
-}
-
 void add(Stack *stack, int num) {
     // allocate and store the new number to stack
     stack->mainStack = realloc(stack->mainStack, (stack->size + 1) * sizeof(int));

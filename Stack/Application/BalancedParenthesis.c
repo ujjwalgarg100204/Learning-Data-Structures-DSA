@@ -33,6 +33,9 @@ bool hasBalancedBrackets(String expression);
 
 bool isEmpty(Stack *stack);
 
+bool fancyBalancedBrackets(String expression);
+
+
 int main(void) {
     int testCases;
     scanf("%d", &testCases);
@@ -42,7 +45,7 @@ int main(void) {
     while (testCases-- > 0) {
         scanf("%s", expression);
 
-        if (hasBalancedBrackets(expression)) {
+        if (fancyBalancedBrackets(expression)) {
             printf("The given expression has balanced brackets.\n");
         } else {
             printf("This given expression does not have balanced brackets.\n");
@@ -93,6 +96,39 @@ bool hasBalancedBrackets(String expression) {
     return true;
 }
 
+bool fancyBalancedBrackets(String expression) {
+    int length = strlen(expression);
+    // I need to do two more things in this function mainly add a print statement where a bracket should be added to make
+    // it a balanced bracket expression
+    // maybe I should change the algorithm a little
+    // there's only one way that
+    int start = 0, end = length - 1;
+    while (start <= end) {
+        if (expression[start] == '(') {
+            // FIXME: make the function for actual expression with numbers and stuff
+            while (end != start && expression[end]) {
+                if (expression[end] == ')') {
+                    end--;
+                    break;
+                }
+            }
+            if (expression[end] != ')') {
+                printf("Missing CLOSING bracket between position #%d and #%d\n", start, start + 1);
+                return false;
+            } else { end--; }
+        } else if (expression[start] == ')') {
+            if (start - 1 < 0) {
+                printf("Missing OPENING brackets\n");
+                return false;
+            }
+            printf("Missing OPENING bracket between position #%d and #%d\n", start, start - 1);
+            return false;
+        }
+        start++;
+    }
+    return true;
+}
+
 void push(Stack *stack, char c) {
     // allocate and store the new number to stack
     stack->mainStack = realloc(stack->mainStack, (stack->size + 1) * sizeof(char));
@@ -131,5 +167,3 @@ char poll(Stack *stack) {
 bool isEmpty(Stack *stack) {
     return stack->size == 0;
 }
-
-
