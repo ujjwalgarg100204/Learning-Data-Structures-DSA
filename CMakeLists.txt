@@ -15,6 +15,10 @@ target_link_libraries(Stack-Main PUBLIC dynamic_stack)
 target_link_libraries(Stack-Main PUBLIC expression_parser)
 
 # Queue Configuration
+add_subdirectory(queue/implementation)
+
+add_executable(Queue-Main queue/main.c)
+target_link_libraries(Queue-Main PUBLIC static_queue)
 
 # Linked List Configuration
 add_subdirectory(linked_list/implementation)

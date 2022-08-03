@@ -1,4 +1,5 @@
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/Stack-Main.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/Queue-Main.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/LinkedList-Main.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
@@ -9,6 +10,9 @@
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application/CMakeFiles/expression_parser.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application/CMakeFiles/edit_cache.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application/CMakeFiles/rebuild_cache.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/queue/implementation/CMakeFiles/static_queue.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/queue/implementation/CMakeFiles/edit_cache.dir
+/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/queue/implementation/CMakeFiles/rebuild_cache.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/CMakeFiles/linked_list.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/CMakeFiles/edit_cache.dir
 /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/CMakeFiles/rebuild_cache.dir

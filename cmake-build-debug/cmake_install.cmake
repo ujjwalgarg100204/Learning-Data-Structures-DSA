@@ -54,6 +54,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/queue/implementation/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/cmake_install.cmake")
 endif()
 

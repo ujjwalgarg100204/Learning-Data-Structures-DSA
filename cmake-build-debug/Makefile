@@ -130,6 +130,19 @@ Stack-Main/fast:
 .PHONY : Stack-Main/fast
 
 #=============================================================================
+# Target rules for targets named Queue-Main
+
+# Build rule for target.
+Queue-Main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Queue-Main
+.PHONY : Queue-Main
+
+# fast build rule for target.
+Queue-Main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue-Main.dir/build.make CMakeFiles/Queue-Main.dir/build
+.PHONY : Queue-Main/fast
+
+#=============================================================================
 # Target rules for targets named LinkedList-Main
 
 # Build rule for target.
@@ -182,6 +195,19 @@ expression_parser/fast:
 .PHONY : expression_parser/fast
 
 #=============================================================================
+# Target rules for targets named static_queue
+
+# Build rule for target.
+static_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 static_queue
+.PHONY : static_queue
+
+# fast build rule for target.
+static_queue/fast:
+	$(MAKE) $(MAKESILENT) -f queue/implementation/CMakeFiles/static_queue.dir/build.make queue/implementation/CMakeFiles/static_queue.dir/build
+.PHONY : static_queue/fast
+
+#=============================================================================
 # Target rules for targets named linked_list
 
 # Build rule for target.
@@ -218,6 +244,30 @@ linked_list/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LinkedList-Main.dir/build.make CMakeFiles/LinkedList-Main.dir/linked_list/main.c.s
 .PHONY : linked_list/main.c.s
 
+queue/main.o: queue/main.c.o
+.PHONY : queue/main.o
+
+# target to build an object file
+queue/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue-Main.dir/build.make CMakeFiles/Queue-Main.dir/queue/main.c.o
+.PHONY : queue/main.c.o
+
+queue/main.i: queue/main.c.i
+.PHONY : queue/main.i
+
+# target to preprocess a source file
+queue/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue-Main.dir/build.make CMakeFiles/Queue-Main.dir/queue/main.c.i
+.PHONY : queue/main.c.i
+
+queue/main.s: queue/main.c.s
+.PHONY : queue/main.s
+
+# target to generate assembly for a file
+queue/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Queue-Main.dir/build.make CMakeFiles/Queue-Main.dir/queue/main.c.s
+.PHONY : queue/main.c.s
+
 stack/main.o: stack/main.c.o
 .PHONY : stack/main.o
 
@@ -251,14 +301,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LinkedList-Main"
+	@echo "... Queue-Main"
 	@echo "... Stack-Main"
 	@echo "... dynamic_stack"
 	@echo "... expression_parser"
 	@echo "... linked_list"
+	@echo "... static_queue"
 	@echo "... static_stack"
 	@echo "... linked_list/main.o"
 	@echo "... linked_list/main.i"
 	@echo "... linked_list/main.s"
+	@echo "... queue/main.o"
+	@echo "... queue/main.i"
+	@echo "... queue/main.s"
 	@echo "... stack/main.o"
 	@echo "... stack/main.i"
 	@echo "... stack/main.s"

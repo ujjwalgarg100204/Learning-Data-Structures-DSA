@@ -28,6 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.23.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.23.2/CMakeSystem.cmake"
   "../linked_list/implementation/CMakeLists.txt"
+  "../queue/implementation/CMakeLists.txt"
   "../stack/application/CMakeLists.txt"
   "../stack/implementation/CMakeLists.txt"
   )
@@ -43,15 +44,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "stack/implementation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "stack/application/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "queue/implementation/CMakeFiles/CMakeDirectoryInformation.cmake"
   "linked_list/implementation/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Stack-Main.dir/DependInfo.cmake"
+  "CMakeFiles/Queue-Main.dir/DependInfo.cmake"
   "CMakeFiles/LinkedList-Main.dir/DependInfo.cmake"
   "stack/implementation/CMakeFiles/static_stack.dir/DependInfo.cmake"
   "stack/implementation/CMakeFiles/dynamic_stack.dir/DependInfo.cmake"
   "stack/application/CMakeFiles/expression_parser.dir/DependInfo.cmake"
+  "queue/implementation/CMakeFiles/static_queue.dir/DependInfo.cmake"
   "linked_list/implementation/CMakeFiles/linked_list.dir/DependInfo.cmake"
   )
