@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/Stack-Main.dir/stack/main.c.o" -o Stack-Main  stack/implementation/libstatic_stack.a stack/implementation/libdynamic_stack.a stack/application/libexpression_parser.a stack/implementation/libdynamic_stack.a -lm 

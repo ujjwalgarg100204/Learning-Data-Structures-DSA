@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstatic_stack.a CMakeFiles/static_stack.dir/static_stack.c.o
+/usr/bin/ranlib libstatic_stack.a

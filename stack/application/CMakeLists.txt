@@ -1,0 +1,3 @@
+add_library(expression_parser expression_parser.c)
+target_link_libraries(expression_parser PUBLIC dynamic_stack)
+target_link_libraries(expression_parser PUBLIC m)

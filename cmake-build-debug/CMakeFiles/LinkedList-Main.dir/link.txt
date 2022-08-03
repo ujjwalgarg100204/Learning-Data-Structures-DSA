@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/LinkedList-Main.dir/linked_list/main.c.o" -o LinkedList-Main  linked_list/implementation/liblinked_list.a 

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DSA1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\stack\;CMake Files\stack\implementation\;CMake Files\stack\application\;CMake Files\linked_list\;CMake Files\linked_list\implementation\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Stack-Main">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/Stack-Main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Stack-Main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Stack-Main/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/Stack-Main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Stack-Main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkedList-Main">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/LinkedList-Main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkedList-Main"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinkedList-Main/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/LinkedList-Main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinkedList-Main/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="static_stack">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation/libstatic_stack.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 static_stack"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="static_stack/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation/libstatic_stack.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 static_stack/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic_stack">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation/libdynamic_stack.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 dynamic_stack"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic_stack/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation/libdynamic_stack.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 dynamic_stack/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="expression_parser">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application/libexpression_parser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 expression_parser"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="expression_parser/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application/libexpression_parser.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/stack/application"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 expression_parser/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/stack/application/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linked_list">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/liblinked_list.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 linked_list"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linked_list/fast">
+				<Option output="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation/liblinked_list.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/cmake-build-debug/linked_list/implementation"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 linked_list/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ujjwalgarg/VIT/Semester\ Data/FallSemester\ [III]/Data\ Structures\ and\ Algorithms/Codes/cmake-build-debug/linked_list/implementation/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/linked_list/implementation/linked_list.c">
+			<Option target="linked_list"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/linked_list/implementation/linked_list.h">
+			<Option target="linked_list"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/linked_list/main.c">
+			<Option target="LinkedList-Main"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/application/expression_parser.c">
+			<Option target="expression_parser"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/application/expression_parser.h">
+			<Option target="expression_parser"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/dynamic_stack.c">
+			<Option target="dynamic_stack"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/dynamic_stack.h">
+			<Option target="dynamic_stack"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/static_stack.c">
+			<Option target="static_stack"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/static_stack.h">
+			<Option target="static_stack"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/main.c">
+			<Option target="Stack-Main"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stack\implementation\"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/application/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\stack\application\"/>
+		</Unit>
+		<Unit filename="/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/linked_list/implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\linked_list\implementation\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

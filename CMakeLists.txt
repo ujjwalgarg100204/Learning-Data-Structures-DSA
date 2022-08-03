@@ -1,19 +1,26 @@
-cmake_minimum_required(VERSION 3.22)
-project(Codes C)
+cmake_minimum_required(VERSION 3.23)
+project(DSA1 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Codes main.c)
+# Stack Configuration
+# add the implementation library
+add_subdirectory(stack/implementation)
+# add the application library
+add_subdirectory(stack/application)
 
-# LinkedList
-add_executable(LinkedList-Implementation LinkedList/Implementation.c)
+add_executable(Stack-Main stack/main.c)   # add the executable
+target_link_libraries(Stack-Main PUBLIC static_stack)
+target_link_libraries(Stack-Main PUBLIC dynamic_stack)
+target_link_libraries(Stack-Main PUBLIC expression_parser)
 
-# Stacks
-add_executable(StacksDynamicArrays Stack/ImplementationUsingDynamicArrays.c)
-add_executable(StacksStaticArrays Stack/ImplementationUsingStaticArray.c)
-add_executable(StackAppBalancedParenthesis Stack/Application/BalancedParenthesis.c)
-add_executable(StackAppExpressionChanger Stack/Application/ExpressionChanger.c)
-add_executable(StackAppExpressionEval Stack/Application/ExpressionEvaluator.c)
+# Queue Configuration
+
+# Linked List Configuration
+add_subdirectory(linked_list/implementation)
+
+add_executable(LinkedList-Main linked_list/main.c)  # add the executable
+target_link_libraries(LinkedList-Main PUBLIC linked_list)
 
 
 
