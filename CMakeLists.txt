@@ -28,3 +28,10 @@ add_subdirectory(linked_list/implementation)
 
 add_executable(LinkedList-Main linked_list/main.c)  # add the executable
 target_link_libraries(LinkedList-Main PUBLIC linked_list)
+
+# Dynamic Array Configuration
+add_subdirectory(dynamic_array/implementation)
+
+add_executable(DynamicArray-Main dynamic_array/main.c)  # add the executable
+target_link_libraries(DynamicArray-Main PUBLIC dynamic_array)
+
