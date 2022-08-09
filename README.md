@@ -34,7 +34,7 @@ be LIFO(Last In First Out) or FILO(First In Last Out). [Source](https://www.geek
 * Conversion of decimal to
   binary [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L25)]
 * Checking if the string
-  is [Palindrome](https://www.merriam-webster.com/dictionary/palindrome) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L7)]
+  is [palindrome](https://www.merriam-webster.com/dictionary/palindrome) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L7)]
 
 ## Queue
 
@@ -50,17 +50,26 @@ added. [Source](https://www.geeksforgeeks.org/queue-data-structure/)
 
 * Using
   [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c)[[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/queue/implementation/static_queue.c#L7)]
-* Circular Queue:
-  using [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code]()]
+
+### Circular Queue
+
+A Circular Queue is a special version of queue where the last element of the queue is connected to the first element of
+the queue forming a circle.The operations are performed based on FIFO (First In First Out) principle. It is also called
+‘Ring Buffer’.In a normal Queue, we can insert elements until queue becomes full. But once queue becomes full, we can
+not insert the next element even if there is a space in front of
+queue. [Source](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
+
+### Implementation
+
+* Using
+  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/queue/implementation/circular_static_queue.c#L7)]
 
 ## Dynamic Arrays
 
 A dynamic array is an array with a big **improvement**: automatic resizing.
 One **limitation** of arrays is that they're fixed currSize, meaning you need to specify the number of elements your
-array
-will hold ahead of time.
-A dynamic array expands as you add more elements. So you don't need to determine the currSize ahead of
-time. [[Source](https://www.interviewcake.com/concept/java/dynamic-array)]
+array will hold ahead of time. A dynamic array expands as you add more elements. So you don't need to determine the
+currSize ahead of time. [[Source](https://www.interviewcake.com/concept/java/dynamic-array)]
 
 ## Linked List
 

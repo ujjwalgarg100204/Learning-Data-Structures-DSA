@@ -34,7 +34,7 @@ void enqueueI(QueueI *queue, int val);
  * Simply moves pointer of front one point ahead if it is not empty.
  * If queue is empty, it does nothing
  */
-void dequeueI(QueueI *queue);
+int dequeueI(QueueI *queue);
 
 /*
  * gives the value what is going to be removed on next dequeue operation

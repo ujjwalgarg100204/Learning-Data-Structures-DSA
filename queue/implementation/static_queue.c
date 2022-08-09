@@ -6,7 +6,7 @@
 
 QueueI *newQueueI(int size) {
     QueueI *queue = malloc(sizeof(QueueI));
-    queue->arr = malloc(sizeof(int) * size);
+    queue->arr = calloc(size, sizeof(int));
     queue->front = -1;
     queue->rear = -1;
     queue->size = size;
@@ -43,12 +43,13 @@ bool isEmpty(QueueI *queue) {
     return queue->front == -1;
 }
 
-void dequeueI(QueueI *queue) {
+int dequeueI(QueueI *queue) {
     if (isEmpty(queue)) {
         printf("Queue is Empty\n");
-        return;
+        return -1;
     }
     // equivalent to deleting the element from the front
+    int toReturn = queue->arr[queue->front];
     queue->front++;
 
     // if front and rear becomes the same then restart the queue
@@ -56,6 +57,7 @@ void dequeueI(QueueI *queue) {
         queue->front = -1;
         queue->rear = -1;
     }
+    return toReturn;
 }
 
 int peekI(QueueI *queue) {

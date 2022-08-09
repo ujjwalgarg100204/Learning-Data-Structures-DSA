@@ -20,6 +20,7 @@ target_link_libraries(Stack-Main PUBLIC small_applications_stack)
 add_subdirectory(queue/implementation)
 
 add_executable(Queue-Main queue/main.c)
+target_link_libraries(Queue-Main PUBLIC circular_static_queue)
 target_link_libraries(Queue-Main PUBLIC static_queue)
 
 # Linked List Configuration
