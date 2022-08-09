@@ -10,6 +10,7 @@ typedef struct StackI {
     int size;
 } StackI;
 
+/* Integer Stack */
 StackI *newStackI(int size);
 
 bool isEmptyI(StackI *stack);
@@ -25,7 +26,7 @@ void popI(StackI *stack);
 void freeStackI(StackI *stack);
 
 
-// Double Stack
+/* Double Stack */
 typedef struct StackD {
     double *arr;
     int top;
@@ -47,7 +48,7 @@ void popD(StackD *stack);
 void freeStackD(StackD *stack);
 
 
-// Character Stack
+/* Character Stack */
 typedef struct StackC {
     char *arr;
     int top;
@@ -69,7 +70,7 @@ void popC(StackC *stack);
 void freeStackC(StackC *stack);
 
 
-// Long Stack
+/* Long Stack */
 typedef struct StackL {
     long *arr;
     int top;

@@ -11,7 +11,7 @@ typedef struct QueueI {
 } QueueI;
 
 /*
- * Creates a static queue using array of given size
+ * Creates a static queue using array of given currSize
  */
 QueueI *newQueueI(int size);
 

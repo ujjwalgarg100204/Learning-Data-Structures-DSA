@@ -93,6 +93,7 @@ Stack-Main.exe: CMakeFiles/Stack-Main.dir/stack/main.c.obj
 Stack-Main.exe: CMakeFiles/Stack-Main.dir/build.make
 Stack-Main.exe: stack/implementation/libstatic_stack.a
 Stack-Main.exe: stack/implementation/libdynamic_stack.a
+Stack-Main.exe: stack/implementation/liblinked_stack.a
 Stack-Main.exe: stack/application/libexpression_parser.a
 Stack-Main.exe: stack/implementation/libdynamic_stack.a
 Stack-Main.exe: CMakeFiles/Stack-Main.dir/linklibs.rsp

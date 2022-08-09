@@ -1,14 +1,13 @@
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "linked_list.h"
 
-LinkedList *newLinkedList(int firstData) {
+LinkedList *newLinkedList(void) {
     LinkedList *linkedList = malloc(sizeof(LinkedList));
-    linkedList->head = malloc(sizeof(Node));
-    linkedList->head->data = firstData;
-    linkedList->head->next = NULL;
-    linkedList->size = 1;
+    linkedList->head = NULL;    // initialise the head pointer to NULL, will be initialised by add
+    linkedList->currSize = 0;
     return linkedList;
 }
 
@@ -22,7 +21,7 @@ void freeLinkedList(LinkedList *linkedList) {
     free(linkedList);
 }
 
-void add(LinkedList *linkedList, int num) {
+void addFirst(LinkedList *linkedList, int num) {
     Node *newNode = malloc(sizeof(Node));
     newNode->data = num;
 
@@ -31,13 +30,13 @@ void add(LinkedList *linkedList, int num) {
 
     // direct head of list to new node
     linkedList->head = newNode;
-    linkedList->size++;
+    linkedList->currSize++;
 }
 
 void addLast(LinkedList *linkedList, int num) {
     Node *newNode = malloc(sizeof(Node));
     newNode->data = num;
-    newNode->next = NULL;
+    newNode->next = NULL;   // since it is last node
 
     // put the node at the end of list
     Node *current = linkedList->head;
@@ -46,13 +45,18 @@ void addLast(LinkedList *linkedList, int num) {
     }
     // current holds the second last node
     current->next = newNode;
-    linkedList->size++;
+    linkedList->currSize++;
 }
 
+/*
+ * index should be coherent with zero-indexing
+ */
 int getIntAt(LinkedList *linkedList, int index) {
-    if (!(index >= 0 && index < linkedList->size)) {
+    if (!isValidIndex(linkedList, index)) {
+        printf("Invalid Index");
         return -1;
     }
+
     Node *current = linkedList->head;
     for (int i = 0; i < index; ++i) {
         current = current->next;
@@ -62,12 +66,21 @@ int getIntAt(LinkedList *linkedList, int index) {
 }
 
 void deleteIntAt(LinkedList *linkedList, int index) {
-    if (!(index >= 0 && index < linkedList->size))
+    if (!isValidIndex(linkedList, index)) {
+        printf("Invalid Index\n");
         return;
-    // FIXME: might not work for last index
+    }
+
+    // only one element in the list
+    if (linkedList->head->next == NULL) {
+        free(linkedList->head);
+        linkedList->head = NULL;
+        return;
+    }
+
     // traverse to index one less than whatever index is given
     Node *current = linkedList->head;
-    while (index - 1) {
+    while (index - 1 > 0) {
         current = current->next;
         index--;
     }
@@ -76,11 +89,11 @@ void deleteIntAt(LinkedList *linkedList, int index) {
     Node *next = current->next->next;
     free(current->next);
     current->next = next;
-    linkedList->size--;
+    linkedList->currSize--;
 }
 
 void setIntAt(LinkedList *linkedList, int index, int value) {
-    if (!(index >= 0 && index < linkedList->size)) {
+    if (!isValidIndex(linkedList, index)) {
         return;
     }
 
@@ -95,6 +108,7 @@ void setIntAt(LinkedList *linkedList, int index, int value) {
 
 bool contains(LinkedList *linkedList, int value) {
     Node *current = linkedList->head;
+    // iterate through entire list and see if the value is present
     while (current) {
         if (current->data == value) {
             return true;
@@ -106,9 +120,27 @@ bool contains(LinkedList *linkedList, int value) {
 }
 
 bool isValidIndex(LinkedList *linkedList, int index) {
-    int size = 0;
+    // if index is negative or list is empty then index not valid
+    if (index < 0 || isListEmpty(linkedList)) { return false; }
+
     for (Node *current = linkedList->head; current; current = current->next) {
-        size++;
+        index--;
     }
-    return index < size;
+
+    return index < 0;
+}
+
+bool isListEmpty(LinkedList *linkedList) {
+    return linkedList->head == NULL;
+}
+
+void deleteFirst(LinkedList *linkedList) {
+    if (isListEmpty(linkedList)) {
+        printf("List is empty\n");
+        return;
+    }
+
+    Node *nextToHead = linkedList->head->next;
+    free(linkedList->head);
+    linkedList->head = nextToHead;
 }

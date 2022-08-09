@@ -12,6 +12,7 @@ add_subdirectory(stack/application)
 add_executable(Stack-Main stack/main.c)   # add the executable
 target_link_libraries(Stack-Main PUBLIC static_stack)
 target_link_libraries(Stack-Main PUBLIC dynamic_stack)
+target_link_libraries(Stack-Main PUBLIC linked_stack)
 target_link_libraries(Stack-Main PUBLIC expression_parser)
 
 # Queue Configuration

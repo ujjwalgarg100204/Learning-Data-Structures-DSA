@@ -5,6 +5,7 @@ D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/static_stack.dir
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/dynamic_stack.dir
+D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/linked_stack.dir
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/edit_cache.dir
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/rebuild_cache.dir
 D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/application/CMakeFiles/expression_parser.dir

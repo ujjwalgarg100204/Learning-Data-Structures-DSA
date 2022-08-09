@@ -53,9 +53,10 @@ added. [Source](https://www.geeksforgeeks.org/queue-data-structure/)
 ## Dynamic Arrays
 
 A dynamic array is an array with a big **improvement**: automatic resizing.
-One **limitation** of arrays is that they're fixed size, meaning you need to specify the number of elements your array
+One **limitation** of arrays is that they're fixed currSize, meaning you need to specify the number of elements your
+array
 will hold ahead of time.
-A dynamic array expands as you add more elements. So you don't need to determine the size ahead of
+A dynamic array expands as you add more elements. So you don't need to determine the currSize ahead of
 time. [[Source](https://www.interviewcake.com/concept/java/dynamic-array)]
 
 ## Linked List

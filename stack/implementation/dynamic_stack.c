@@ -2,7 +2,15 @@
 #include <stdio.h>
 #include "dynamic_stack.h"
 
-// Character Stack
+/* Struct for stack
+typedef struct Stack {
+    int *arr;
+    int top;
+    int currSize;
+} Stack;
+*/
+
+/* Character Stack */
 StackC *newStackC() {
     StackC *stack = malloc(sizeof(StackC));
     stack->arr = NULL;
@@ -65,7 +73,7 @@ void freeStackC(StackC *stack) {
 }
 
 
-// Double Stack
+/* Double Stack */
 StackD *newStackD() {
     StackD *stack = malloc(sizeof(StackD));
     stack->arr = NULL;
@@ -128,7 +136,7 @@ void freeStackD(StackD *stack) {
 }
 
 
-// Integer Stack
+/* Integer Stack */
 StackI *newStackI() {
     StackI *stack = malloc(sizeof(StackI));
     stack->arr = NULL;
@@ -191,7 +199,7 @@ void freeStackI(StackI *stack) {
 }
 
 
-// Long Stack
+/* Long Stack */
 StackL *newStackL() {
     StackL *stack = malloc(sizeof(StackL));
     stack->arr = NULL;

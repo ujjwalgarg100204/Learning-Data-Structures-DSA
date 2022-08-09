@@ -181,6 +181,19 @@ dynamic_stack/fast:
 .PHONY : dynamic_stack/fast
 
 #=============================================================================
+# Target rules for targets named linked_stack
+
+# Build rule for target.
+linked_stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 linked_stack
+.PHONY : linked_stack
+
+# fast build rule for target.
+linked_stack/fast:
+	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/build
+.PHONY : linked_stack/fast
+
+#=============================================================================
 # Target rules for targets named expression_parser
 
 # Build rule for target.
@@ -305,6 +318,7 @@ help:
 	@echo ... dynamic_stack
 	@echo ... expression_parser
 	@echo ... linked_list
+	@echo ... linked_stack
 	@echo ... static_queue
 	@echo ... static_stack
 	@echo ... linked_list/main.obj

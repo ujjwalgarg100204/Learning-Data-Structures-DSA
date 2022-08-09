@@ -139,6 +139,7 @@ stack/application/clean: stack/application/CMakeFiles/expression_parser.dir/clea
 # Recursive "all" directory target.
 stack/implementation/all: stack/implementation/CMakeFiles/static_stack.dir/all
 stack/implementation/all: stack/implementation/CMakeFiles/dynamic_stack.dir/all
+stack/implementation/all: stack/implementation/CMakeFiles/linked_stack.dir/all
 .PHONY : stack/implementation/all
 
 # Recursive "preinstall" directory target.
@@ -148,15 +149,17 @@ stack/implementation/preinstall:
 # Recursive "clean" directory target.
 stack/implementation/clean: stack/implementation/CMakeFiles/static_stack.dir/clean
 stack/implementation/clean: stack/implementation/CMakeFiles/dynamic_stack.dir/clean
+stack/implementation/clean: stack/implementation/CMakeFiles/linked_stack.dir/clean
 .PHONY : stack/implementation/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Stack-Main.dir
 
 # All Build rule for target.
-CMakeFiles/Stack-Main.dir/all: stack/application/CMakeFiles/expression_parser.dir/all
 CMakeFiles/Stack-Main.dir/all: stack/implementation/CMakeFiles/static_stack.dir/all
 CMakeFiles/Stack-Main.dir/all: stack/implementation/CMakeFiles/dynamic_stack.dir/all
+CMakeFiles/Stack-Main.dir/all: stack/implementation/CMakeFiles/linked_stack.dir/all
+CMakeFiles/Stack-Main.dir/all: stack/application/CMakeFiles/expression_parser.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack-Main.dir\build.make CMakeFiles/Stack-Main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Stack-Main.dir\build.make CMakeFiles/Stack-Main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target Stack-Main"
@@ -164,7 +167,7 @@ CMakeFiles/Stack-Main.dir/all: stack/implementation/CMakeFiles/dynamic_stack.dir
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Stack-Main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" 8
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Stack-Main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Stack-Main.dir/rule
@@ -237,7 +240,7 @@ CMakeFiles/LinkedList-Main.dir/clean:
 stack/implementation/CMakeFiles/static_stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\static_stack.dir\build.make stack/implementation/CMakeFiles/static_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\static_stack.dir\build.make stack/implementation/CMakeFiles/static_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=15,16 "Built target static_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=18,19 "Built target static_stack"
 .PHONY : stack/implementation/CMakeFiles/static_stack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -283,6 +286,32 @@ stack/implementation/CMakeFiles/dynamic_stack.dir/clean:
 .PHONY : stack/implementation/CMakeFiles/dynamic_stack.dir/clean
 
 #=============================================================================
+# Target rules for target stack/implementation/CMakeFiles/linked_stack.dir
+
+# All Build rule for target.
+stack/implementation/CMakeFiles/linked_stack.dir/all:
+	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/depend
+	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=13,14,15 "Built target linked_stack"
+.PHONY : stack/implementation/CMakeFiles/linked_stack.dir/all
+
+# Build rule for subdir invocation for target.
+stack/implementation/CMakeFiles/linked_stack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 stack/implementation/CMakeFiles/linked_stack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" 0
+.PHONY : stack/implementation/CMakeFiles/linked_stack.dir/rule
+
+# Convenience name for target.
+linked_stack: stack/implementation/CMakeFiles/linked_stack.dir/rule
+.PHONY : linked_stack
+
+# clean rule for target.
+stack/implementation/CMakeFiles/linked_stack.dir/clean:
+	$(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/clean
+.PHONY : stack/implementation/CMakeFiles/linked_stack.dir/clean
+
+#=============================================================================
 # Target rules for target stack/application/CMakeFiles/expression_parser.dir
 
 # All Build rule for target.
@@ -315,7 +344,7 @@ stack/application/CMakeFiles/expression_parser.dir/clean:
 queue/implementation/CMakeFiles/static_queue.dir/all:
 	$(MAKE) $(MAKESILENT) -f queue\implementation\CMakeFiles\static_queue.dir\build.make queue/implementation/CMakeFiles/static_queue.dir/depend
 	$(MAKE) $(MAKESILENT) -f queue\implementation\CMakeFiles\static_queue.dir\build.make queue/implementation/CMakeFiles/static_queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=13,14 "Built target static_queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug\CMakeFiles" --progress-num=16,17 "Built target static_queue"
 .PHONY : queue/implementation/CMakeFiles/static_queue.dir/all
 
 # Build rule for subdir invocation for target.

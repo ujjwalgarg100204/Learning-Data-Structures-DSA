@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/* Struct defined for stack
+ typedef struct Stack {
+    int *arr;
+    int top;
+    int currSize;
+} Stack;
+ */
+
+/* Integer Stack */
 StackI *newStackI(int size) {
     StackI *stack = malloc(sizeof(StackI));
     stack->arr = malloc(sizeof(int) * size);
@@ -48,7 +57,7 @@ void popI(StackI *stack) {
     }
 }
 
-// For Double
+/* Double Stack */
 StackD *newStackD(int size) {
     StackD *stack = malloc(sizeof(StackD));
     stack->arr = malloc(sizeof(int) * size);
@@ -93,6 +102,8 @@ void popD(StackD *stack) {
         printf("Stack Empty\n");
     }
 }
+
+/* Character Stack */
 StackC *newStackC(int size) {
     StackC *stack = malloc(sizeof(StackC));
     stack->arr = malloc(sizeof(char) * size);
@@ -137,6 +148,8 @@ void popC(StackC *stack) {
         printf("Stack Empty\n");
     }
 }
+
+/* Long Integer Stack */
 StackL *newStackL(int size) {
     StackL *stack = malloc(sizeof(StackL));
     stack->arr = malloc(sizeof(long) * size);

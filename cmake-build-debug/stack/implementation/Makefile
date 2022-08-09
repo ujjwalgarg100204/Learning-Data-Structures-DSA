@@ -143,6 +143,44 @@ dynamic_stack/fast:
 	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\dynamic_stack.dir\build.make stack/implementation/CMakeFiles/dynamic_stack.dir/build
 .PHONY : dynamic_stack/fast
 
+# Convenience name for target.
+stack/implementation/CMakeFiles/linked_stack.dir/rule:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 stack/implementation/CMakeFiles/linked_stack.dir/rule
+.PHONY : stack/implementation/CMakeFiles/linked_stack.dir/rule
+
+# Convenience name for target.
+linked_stack: stack/implementation/CMakeFiles/linked_stack.dir/rule
+.PHONY : linked_stack
+
+# fast build rule for target.
+linked_stack/fast:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/build
+.PHONY : linked_stack/fast
+
+__/__/linked_list/implementation/linked_list.obj: __/__/linked_list/implementation/linked_list.c.obj
+.PHONY : __/__/linked_list/implementation/linked_list.obj
+
+# target to build an object file
+__/__/linked_list/implementation/linked_list.c.obj:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/__/__/linked_list/implementation/linked_list.c.obj
+.PHONY : __/__/linked_list/implementation/linked_list.c.obj
+
+__/__/linked_list/implementation/linked_list.i: __/__/linked_list/implementation/linked_list.c.i
+.PHONY : __/__/linked_list/implementation/linked_list.i
+
+# target to preprocess a source file
+__/__/linked_list/implementation/linked_list.c.i:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/__/__/linked_list/implementation/linked_list.c.i
+.PHONY : __/__/linked_list/implementation/linked_list.c.i
+
+__/__/linked_list/implementation/linked_list.s: __/__/linked_list/implementation/linked_list.c.s
+.PHONY : __/__/linked_list/implementation/linked_list.s
+
+# target to generate assembly for a file
+__/__/linked_list/implementation/linked_list.c.s:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/__/__/linked_list/implementation/linked_list.c.s
+.PHONY : __/__/linked_list/implementation/linked_list.c.s
+
 dynamic_stack.obj: dynamic_stack.c.obj
 .PHONY : dynamic_stack.obj
 
@@ -166,6 +204,30 @@ dynamic_stack.s: dynamic_stack.c.s
 dynamic_stack.c.s:
 	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\dynamic_stack.dir\build.make stack/implementation/CMakeFiles/dynamic_stack.dir/dynamic_stack.c.s
 .PHONY : dynamic_stack.c.s
+
+linked_stack.obj: linked_stack.c.obj
+.PHONY : linked_stack.obj
+
+# target to build an object file
+linked_stack.c.obj:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/linked_stack.c.obj
+.PHONY : linked_stack.c.obj
+
+linked_stack.i: linked_stack.c.i
+.PHONY : linked_stack.i
+
+# target to preprocess a source file
+linked_stack.c.i:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/linked_stack.c.i
+.PHONY : linked_stack.c.i
+
+linked_stack.s: linked_stack.c.s
+.PHONY : linked_stack.s
+
+# target to generate assembly for a file
+linked_stack.c.s:
+	cd /d "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug" && $(MAKE) $(MAKESILENT) -f stack\implementation\CMakeFiles\linked_stack.dir\build.make stack/implementation/CMakeFiles/linked_stack.dir/linked_stack.c.s
+.PHONY : linked_stack.c.s
 
 static_stack.obj: static_stack.c.obj
 .PHONY : static_stack.obj
@@ -200,10 +262,17 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... dynamic_stack
+	@echo ... linked_stack
 	@echo ... static_stack
+	@echo ... __/__/linked_list/implementation/linked_list.obj
+	@echo ... __/__/linked_list/implementation/linked_list.i
+	@echo ... __/__/linked_list/implementation/linked_list.s
 	@echo ... dynamic_stack.obj
 	@echo ... dynamic_stack.i
 	@echo ... dynamic_stack.s
+	@echo ... linked_stack.obj
+	@echo ... linked_stack.i
+	@echo ... linked_stack.s
 	@echo ... static_stack.obj
 	@echo ... static_stack.i
 	@echo ... static_stack.s

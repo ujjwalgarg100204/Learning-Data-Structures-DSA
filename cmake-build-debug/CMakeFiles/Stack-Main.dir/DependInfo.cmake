@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/static_stack.dir/DependInfo.cmake"
   "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/dynamic_stack.dir/DependInfo.cmake"
+  "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/implementation/CMakeFiles/linked_stack.dir/DependInfo.cmake"
   "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug/stack/application/CMakeFiles/expression_parser.dir/DependInfo.cmake"
   )
 
