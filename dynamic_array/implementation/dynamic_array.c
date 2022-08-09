@@ -3,10 +3,21 @@
 
 #include "dynamic_array.h"
 
-void shiftArrByI(int *arr, int by);
 
+/*
+ * Struct for dynamic array
+
+typedef struct DynamicArrayI {
+    int *arr;
+    int size;
+} DynamicArrayI;
+*/
+
+
+/* Returns true if index exists in the dynamic array */
 bool isValidIndexI(DynamicArrayI *dynamicArr, int index);
 
+/* Returns ptr to Dynamic Array */
 DynamicArrayI *newDynamicArrayI() {
     DynamicArrayI *dynamicArray = malloc(sizeof(DynamicArrayI));
     dynamicArray->arr = NULL;
@@ -14,11 +25,13 @@ DynamicArrayI *newDynamicArrayI() {
     return dynamicArray;
 }
 
+/* Frees the dynamically allocated array */
 void freeDynamicArrayI(DynamicArrayI *dynamicArr) {
     free(dynamicArr->arr);
     free(dynamicArr);
 }
 
+/* inserts a specific element at a specific position index in array */
 void addAtIndexI(DynamicArrayI *dynamicArr, int index, int val) {
     if (!isValidIndexI(dynamicArr, index)) {
         return;
@@ -36,6 +49,7 @@ void addAtIndexI(DynamicArrayI *dynamicArr, int index, int val) {
     dynamicArr->arr[index] = val;
 }
 
+/* inserts the element at the end of array */
 void addAtLastI(DynamicArrayI *dynamicArr, int val) {
     // allocate the memory for new element
     dynamicArr->arr = realloc(dynamicArr->arr, sizeof(int) * (++dynamicArr->size));
@@ -44,6 +58,7 @@ void addAtLastI(DynamicArrayI *dynamicArr, int val) {
     dynamicArr->arr[dynamicArr->size - 1] = val;
 }
 
+/* Returns true if this array contains the specified element */
 bool containsI(DynamicArrayI *dynamicArr, int val) {
     // loop through the whole array in search of the array, if found return true
     for (int i = 0; i < dynamicArr->size; ++i) {
@@ -55,6 +70,7 @@ bool containsI(DynamicArrayI *dynamicArr, int val) {
     return false;
 }
 
+/* 	Returns the element at the specified position in this array */
 int getI(DynamicArrayI *dynamicArr, int index) {
     if (!isValidIndexI(dynamicArr, index)) {
         return -1;
@@ -63,11 +79,13 @@ int getI(DynamicArrayI *dynamicArr, int index) {
     return dynamicArr->arr[index];
 }
 
+/*	Returns true if this array contains no elements */
 bool isEmptyI(DynamicArrayI *dynamicArr) {
     return dynamicArr->size == 0;
 }
 
-void removeAtIndexI(DynamicArrayI *dynamicArr, int index) {
+/* Removes the element at the specified position in this array */
+void removeIndexI(DynamicArrayI *dynamicArr, int index) {
     if (!isValidIndexI(dynamicArr, index)) {
         return;
     }
@@ -80,6 +98,7 @@ void removeAtIndexI(DynamicArrayI *dynamicArr, int index) {
     dynamicArr->arr = realloc(dynamicArr->arr, sizeof(int) * (--dynamicArr->size));
 }
 
+/* 	Replaces the element at the specified position in this array with the specified element */
 void setI(DynamicArrayI *dynamicArr, int index, int val) {
     if (!isValidIndexI(dynamicArr, index)) {
         return;

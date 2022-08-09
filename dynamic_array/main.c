@@ -38,7 +38,7 @@ int main(void) {
                 printf("*Index:");
                 scanf("%d", &ind);
 
-                removeAtIndexI(arr, ind);
+                removeIndexI(arr, ind);
                 break;
             }
             case 4: {

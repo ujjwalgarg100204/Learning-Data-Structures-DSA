@@ -71,6 +71,14 @@ One **limitation** of arrays is that they're fixed currSize, meaning you need to
 array will hold ahead of time. A dynamic array expands as you add more elements. So you don't need to determine the
 currSize ahead of time. [[Source](https://www.interviewcake.com/concept/java/dynamic-array)]
 
+![dynamic-array-img](https://technologystrive.com/wp-content/uploads/2022/02/DynamicArrays_GrowInSize.png)
+
+### Implementation
+
+* Using Dynamic memory
+  allocation [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/95776a2bd8be4f5e5da116fc6959bf2b7ad6c54f/dynamic_array/implementation/dynamic_array.c#L10)]
+* Using Static array [[code]()]
+
 ## Linked List
 
 A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The
