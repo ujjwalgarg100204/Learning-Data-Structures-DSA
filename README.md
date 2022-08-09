@@ -62,7 +62,7 @@ queue. [Source](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-
 ### Implementation
 
 * Using
-  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/queue/implementation/circular_static_queue.c#L7)]
+  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/2fa81f4d6d6092537599b2c8234ece52bc5a04f3/queue/implementation/circular_static_queue.c#L5)]
 
 ## Dynamic Arrays
 
