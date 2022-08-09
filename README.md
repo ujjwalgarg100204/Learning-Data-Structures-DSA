@@ -77,7 +77,8 @@ currSize ahead of time. [[Source](https://www.interviewcake.com/concept/java/dyn
 
 * Using Dynamic memory
   allocation [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/95776a2bd8be4f5e5da116fc6959bf2b7ad6c54f/dynamic_array/implementation/dynamic_array.c#L10)]
-* Using Static array [[code]()]
+* Using Static
+  array [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/d9fc6b218cc9bc2f60345c20c7b73401dede5896/dynamic_array/implementation/dynamic_array_using_static.c#L20)]
 
 ## Linked List
 
