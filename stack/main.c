@@ -19,8 +19,9 @@ int main(void) {
         printf("%d\n", peek(stack));
         pop(stack);
     }
-//
+
     printf("%d\n", isEmpty(stack));
+    freeStack(stack);
 //    String infix = calloc(MAX_LENGTH, sizeof(char));
 //    scanf("%s", infix);
 //

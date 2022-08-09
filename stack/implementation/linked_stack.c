@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 #include "linked_stack.h"
-#include "../../linked_list/implementation/linked_list.h"
 
 
 Stack *newStack() {
