@@ -14,6 +14,7 @@ target_link_libraries(Stack-Main PUBLIC static_stack)
 target_link_libraries(Stack-Main PUBLIC dynamic_stack)
 target_link_libraries(Stack-Main PUBLIC linked_stack)
 target_link_libraries(Stack-Main PUBLIC expression_parser)
+target_link_libraries(Stack-Main PUBLIC small_applications_stack)
 
 # Queue Configuration
 add_subdirectory(queue/implementation)

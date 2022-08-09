@@ -5,23 +5,31 @@
 //#include "implementation/dynamic_stack.h"
 #include "implementation/linked_stack.h"
 //#include "application/expression_parser.h"
+#include "application/small_applications_stack.h"
 
 
 #define MAX_LENGTH 100
 
 int main(void) {
-    Stack *stack = newStack();
-    for (int i = 0; i < 10; i++) {
-        push(stack, i);
-    }
+    int dec = 5;
+    char *bin = decimalToBinary(dec);
 
-    for (int i = 0; i < 10; i++) {
-        printf("%d\n", peek(stack));
-        pop(stack);
-    }
+    printf("bin: %s\n", bin);
+    printf("%d\n", isPalindrome(bin));
+    free(bin);
 
-    printf("%d\n", isEmpty(stack));
-    freeStack(stack);
+    /* Stack *stack = newStack();
+     for (int i = 0; i < 10; i++) {
+         push(stack, i);
+     }
+
+     for (int i = 0; i < 10; i++) {
+         printf("%d\n", peek(stack));
+         pop(stack);
+     }
+
+     printf("%d\n", isEmpty(stack));
+     freeStack(stack);*/
 //    String infix = calloc(MAX_LENGTH, sizeof(char));
 //    scanf("%s", infix);
 //

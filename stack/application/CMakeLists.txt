@@ -1,3 +1,4 @@
 add_library(expression_parser expression_parser.c)
+add_library(small_applications_stack small_applications_stack.c)
 target_link_libraries(expression_parser PUBLIC dynamic_stack)
 target_link_libraries(expression_parser PUBLIC m)
