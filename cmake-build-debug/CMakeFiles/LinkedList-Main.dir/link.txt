@@ -1,3 +1,0 @@
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\LinkedList-Main.dir/objects.a
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc CMakeFiles\LinkedList-Main.dir/objects.a @CMakeFiles\LinkedList-Main.dir\objects1.rsp
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\LinkedList-Main.dir/objects.a -Wl,--no-whole-archive -o LinkedList-Main.exe -Wl,--out-implib,libLinkedList-Main.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LinkedList-Main.dir\linklibs.rsp

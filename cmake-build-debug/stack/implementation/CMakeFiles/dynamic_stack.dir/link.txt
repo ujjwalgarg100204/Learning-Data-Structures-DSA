@@ -1,2 +1,0 @@
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc libdynamic_stack.a CMakeFiles/dynamic_stack.dir/dynamic_stack.c.obj
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ranlib.exe libdynamic_stack.a

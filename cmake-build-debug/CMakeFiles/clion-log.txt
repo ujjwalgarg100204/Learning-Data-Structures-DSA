@@ -1,4 +1,0 @@
-C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA" -B "D:\VIT\Semester Data\FallSemester [III]\Data Structures and Algorithms\Learning-Data-Structures-DSA\cmake-build-debug"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/cmake-build-debug
