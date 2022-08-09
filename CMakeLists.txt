@@ -33,5 +33,6 @@ target_link_libraries(LinkedList-Main PUBLIC linked_list)
 add_subdirectory(dynamic_array/implementation)
 
 add_executable(DynamicArray-Main dynamic_array/main.c)  # add the executable
+target_link_libraries(DynamicArray-Main PUBLIC dynamic_array_using_static_array)
 target_link_libraries(DynamicArray-Main PUBLIC dynamic_array)
 

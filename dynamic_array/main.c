@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-#include "implementation/dynamic_array.h"
+//#include "implementation/dynamic_array.h"
+#include "implementation/dynamic_array_using_static.h"
 
 void printArr(int *arr, int size);
 
-
 int main(void) {
-    DynamicArrayI *arr = newDynamicArrayI();
-
+    int maxSize;
+    printf("Max Size:");
+    scanf("%d", &maxSize);
+    DynamicArrayI *arr = newDynamicArrayUsingStaticArrI(maxSize);
+//    DynamicArrayI *arr = newDynamicArrayI();
     int choice;
     do {
         printf("\nDynamic Array menu\n\t1. Add to arr\n\t2. Add to specific index\n\t3. Delete specific index"
@@ -75,7 +78,8 @@ int main(void) {
 
         if (choice != -1) {
             printf("Array:\n\t");
-            printArr(arr->arr, arr->size);
+//            printArr(arr->arr, arr->size);
+            printArr(arr->arr, arr->currSize);
         }
     } while (choice != -1);
     printf("Exiting\n");
