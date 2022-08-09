@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/static_stack.dir/static_stack.c.o"
-  "CMakeFiles/static_stack.dir/static_stack.c.o.d"
+  "CMakeFiles/static_stack.dir/static_stack.c.obj"
+  "CMakeFiles/static_stack.dir/static_stack.c.obj.d"
   "libstatic_stack.a"
   "libstatic_stack.pdb"
 )

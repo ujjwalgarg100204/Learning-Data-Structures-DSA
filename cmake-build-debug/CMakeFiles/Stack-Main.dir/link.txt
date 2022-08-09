@@ -1,1 +1,3 @@
-/usr/bin/cc -g "CMakeFiles/Stack-Main.dir/stack/main.c.o" -o Stack-Main  stack/implementation/libstatic_stack.a stack/implementation/libdynamic_stack.a stack/application/libexpression_parser.a stack/implementation/libdynamic_stack.a -lm 
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\Stack-Main.dir/objects.a
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc CMakeFiles\Stack-Main.dir/objects.a @CMakeFiles\Stack-Main.dir\objects1.rsp
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Stack-Main.dir/objects.a -Wl,--no-whole-archive -o Stack-Main.exe -Wl,--out-implib,libStack-Main.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Stack-Main.dir\linklibs.rsp

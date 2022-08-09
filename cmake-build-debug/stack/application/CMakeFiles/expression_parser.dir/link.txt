@@ -1,2 +1,2 @@
-/usr/bin/ar qc libexpression_parser.a CMakeFiles/expression_parser.dir/expression_parser.c.o
-/usr/bin/ranlib libexpression_parser.a
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc libexpression_parser.a CMakeFiles/expression_parser.dir/expression_parser.c.obj
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ranlib.exe libexpression_parser.a

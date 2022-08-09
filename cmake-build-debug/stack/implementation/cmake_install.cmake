@@ -1,8 +1,8 @@
-# Install script for directory: /home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation
+# Install script for directory: D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/stack/implementation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Data-Structures-and-Algorithm")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,11 +27,6 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -39,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "C:/Users/ujjwa/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.3345.126/bin/mingw/bin/objdump.exe")
 endif()
 

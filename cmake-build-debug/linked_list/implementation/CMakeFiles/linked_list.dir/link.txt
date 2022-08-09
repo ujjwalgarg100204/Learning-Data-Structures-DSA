@@ -1,2 +1,2 @@
-/usr/bin/ar qc liblinked_list.a CMakeFiles/linked_list.dir/linked_list.c.o
-/usr/bin/ranlib liblinked_list.a
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc liblinked_list.a CMakeFiles/linked_list.dir/linked_list.c.obj
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ranlib.exe liblinked_list.a

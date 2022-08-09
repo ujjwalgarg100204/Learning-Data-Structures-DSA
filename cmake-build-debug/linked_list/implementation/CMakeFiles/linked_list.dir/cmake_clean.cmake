@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/linked_list.dir/linked_list.c.o"
-  "CMakeFiles/linked_list.dir/linked_list.c.o.d"
+  "CMakeFiles/linked_list.dir/linked_list.c.obj"
+  "CMakeFiles/linked_list.dir/linked_list.c.obj.d"
   "liblinked_list.a"
   "liblinked_list.pdb"
 )

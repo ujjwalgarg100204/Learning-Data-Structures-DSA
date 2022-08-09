@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/linked_list/implementation/linked_list.c" "linked_list/implementation/CMakeFiles/linked_list.dir/linked_list.c.o" "gcc" "linked_list/implementation/CMakeFiles/linked_list.dir/linked_list.c.o.d"
+  "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/linked_list/implementation/linked_list.c" "linked_list/implementation/CMakeFiles/linked_list.dir/linked_list.c.obj" "gcc" "linked_list/implementation/CMakeFiles/linked_list.dir/linked_list.c.obj.d"
   )
 
 # Targets to which this target links.

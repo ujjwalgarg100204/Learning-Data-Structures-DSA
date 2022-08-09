@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Stack-Main.dir/stack/main.c.o"
-  "CMakeFiles/Stack-Main.dir/stack/main.c.o.d"
-  "Stack-Main"
+  "CMakeFiles/Stack-Main.dir/stack/main.c.obj"
+  "CMakeFiles/Stack-Main.dir/stack/main.c.obj.d"
+  "Stack-Main.exe"
+  "Stack-Main.exe.manifest"
   "Stack-Main.pdb"
+  "libStack-Main.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

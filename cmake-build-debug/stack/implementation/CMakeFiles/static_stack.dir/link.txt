@@ -1,2 +1,2 @@
-/usr/bin/ar qc libstatic_stack.a CMakeFiles/static_stack.dir/static_stack.c.o
-/usr/bin/ranlib libstatic_stack.a
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ar.exe qc libstatic_stack.a CMakeFiles/static_stack.dir/static_stack.c.obj
+C:\Users\ujjwa\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.3345.126\bin\mingw\bin\ranlib.exe libstatic_stack.a

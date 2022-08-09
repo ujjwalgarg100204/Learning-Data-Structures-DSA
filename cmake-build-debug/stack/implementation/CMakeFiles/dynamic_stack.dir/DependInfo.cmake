@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ujjwalgarg/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Codes/stack/implementation/dynamic_stack.c" "stack/implementation/CMakeFiles/dynamic_stack.dir/dynamic_stack.c.o" "gcc" "stack/implementation/CMakeFiles/dynamic_stack.dir/dynamic_stack.c.o.d"
+  "D:/VIT/Semester Data/FallSemester [III]/Data Structures and Algorithms/Learning-Data-Structures-DSA/stack/implementation/dynamic_stack.c" "stack/implementation/CMakeFiles/dynamic_stack.dir/dynamic_stack.c.obj" "gcc" "stack/implementation/CMakeFiles/dynamic_stack.dir/dynamic_stack.c.obj.d"
   )
 
 # Targets to which this target links.

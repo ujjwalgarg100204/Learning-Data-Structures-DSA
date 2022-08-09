@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dynamic_stack.dir/dynamic_stack.c.o"
-  "CMakeFiles/dynamic_stack.dir/dynamic_stack.c.o.d"
+  "CMakeFiles/dynamic_stack.dir/dynamic_stack.c.obj"
+  "CMakeFiles/dynamic_stack.dir/dynamic_stack.c.obj.d"
   "libdynamic_stack.a"
   "libdynamic_stack.pdb"
 )

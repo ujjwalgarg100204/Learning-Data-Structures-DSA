@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/expression_parser.dir/expression_parser.c.o"
-  "CMakeFiles/expression_parser.dir/expression_parser.c.o.d"
+  "CMakeFiles/expression_parser.dir/expression_parser.c.obj"
+  "CMakeFiles/expression_parser.dir/expression_parser.c.obj.d"
   "libexpression_parser.a"
   "libexpression_parser.pdb"
 )
