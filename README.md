@@ -31,7 +31,10 @@ be LIFO(Last In First Out) or FILO(First In Last Out). [Source](https://www.geek
   and
   postfix [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L157)]
   expression
-* Conversion of decimal to binary [[code]()]
+* Conversion of decimal to
+  binary [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L25)]
+* Checking if the string
+  is [Palindrome](https://www.merriam-webster.com/dictionary/palindrome) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L7)]
 
 ## Queue
 

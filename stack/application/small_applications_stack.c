@@ -1,7 +1,4 @@
-
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "small_applications_stack.h"
 
 bool isPalindrome(char *str) {

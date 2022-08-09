@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//#include "implementation/static_stack.h"
-//#include "implementation/dynamic_stack.h"
-#include "implementation/linked_stack.h"
-//#include "application/expression_parser.h"
+//  #include "implementation/static_stack.h"
+//  #include "implementation/dynamic_stack.h"
+//  #include "implementation/linked_stack.h"
+//  #include "application/expression_parser.h"
 #include "application/small_applications_stack.h"
 
 
-#define MAX_LENGTH 100
+//#define MAX_LENGTH 100
 
 int main(void) {
     int dec = 5;
