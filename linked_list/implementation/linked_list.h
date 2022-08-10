@@ -3,46 +3,90 @@
 
 #include <stdbool.h>
 
-typedef struct Node {
+typedef struct NodeI {
     int data;
-    struct Node *next;
-} Node;
+    struct NodeI *next;
+} NodeI;
 
-// wrapper struct for Node
-typedef struct LinkedList {
-    Node *head;
-    int currSize;
-} LinkedList;
+// wrapper struct for NodeI
+typedef struct LinkedListI {
+    NodeI *head;
+    int length;
+} LinkedListI;
 
-LinkedList *newLinkedList(void);
+LinkedListI *newLinkedListI(void);
 
-void freeLinkedList(LinkedList *linkedList);
+void freeLinkedListI(LinkedListI *linkedList);
 
 // O(1) add operation
-void addFirst(LinkedList *linkedList, int num);
+void addFirstI(LinkedListI *linkedList, int num);
 
 // O(n) add operation
-void addLast(LinkedList *linkedList, int num);
+void addLastI(LinkedListI *linkedList, int num);
 
 // returns -1 if index is invalid
-int getIntAt(LinkedList *linkedList, int index);
+int getI(LinkedListI *linkedList, int index);
 
 // O(1) operation
-void deleteFirst(LinkedList *linkedList);
+void deleteFirstI(LinkedListI *linkedList);
 
 // O(n) operation
-void deleteIntAt(LinkedList *linkedList, int index);
+void deleteAtI(LinkedListI *linkedList, int index);
 
 // O(n) operation
-void setIntAt(LinkedList *linkedList, int index, int value);
+void setAtI(LinkedListI *linkedList, int index, int value);
 
 // O(n) operation
-bool contains(LinkedList *linkedList, int value);
+bool containsI(LinkedListI *linkedList, int value);
 
 // O(n) operation
-bool isValidIndex(LinkedList *linkedList, int index);
+bool isValidIndexI(LinkedListI *linkedList, int index);
 
-bool isListEmpty(LinkedList *linkedList);
+bool isListEmptyI(LinkedListI *linkedList);
+
+
+/* For String datatype */
+typedef struct NodeS {
+    char *data;
+    struct NodeS *next;
+} NodeS;
+
+typedef struct LinkedListS {
+    NodeS *head;
+    int length;
+} LinkedListS;
+
+LinkedListS *newLinkedListS(void);
+
+void freeLinkedListS(LinkedListS *linkedList);
+
+// O(1) add operation
+void addFirstS(LinkedListS *linkedList, char *str);
+
+// O(n) add operation
+void addLastS(LinkedListS *linkedList, char *str);
+
+// returns -1 if index is invalid
+char *getS(LinkedListS *linkedList, int index);
+
+// O(1) operation
+void deleteFirstS(LinkedListS *linkedList);
+
+// O(n) operation
+void deleteAtS(LinkedListS *linkedList, int index);
+
+void deleteFirstOccur(LinkedListS *linkedList, const char *str);
+
+// O(n) operation
+void setAtS(LinkedListS *linkedList, int index, char *str);
+
+// O(n) operation
+bool containsS(LinkedListS *linkedList, char *str);
+
+// O(n) operation
+bool isValidIndexS(LinkedListS *linkedList, int index);
+
+bool isListEmptyS(LinkedListS *linkedList);
 
 
 #endif //DSA1_LINKED_LIST_H

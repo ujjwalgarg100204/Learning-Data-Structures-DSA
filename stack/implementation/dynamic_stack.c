@@ -6,7 +6,7 @@
 typedef struct Stack {
     int *arr;
     int top;
-    int currSize;
+    int length;
 } Stack;
 */
 
