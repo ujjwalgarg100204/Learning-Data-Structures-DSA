@@ -1,0 +1,1 @@
+add_library(dynamic_array_i dynamic_array_i.c)

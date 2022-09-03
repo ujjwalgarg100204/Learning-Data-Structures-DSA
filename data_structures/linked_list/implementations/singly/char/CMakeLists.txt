@@ -1,0 +1,2 @@
+add_library(singly_linkedlist_c linkedlist_c.c)
+target_link_libraries(singly_linkedlist_c PUBLIC node_singly_c)

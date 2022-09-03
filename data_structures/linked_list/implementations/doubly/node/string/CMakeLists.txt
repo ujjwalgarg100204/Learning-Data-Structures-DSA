@@ -1,0 +1,1 @@
+add_library(node_doubly_s node_doubly_s.c)

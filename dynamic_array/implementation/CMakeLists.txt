@@ -1,2 +1,0 @@
-add_library(dynamic_array_using_static_array dynamic_array_using_static.c)
-add_library(dynamic_array dynamic_array.c)

@@ -1,0 +1,2 @@
+add_subdirectory(singly)
+add_subdirectory(doubly)

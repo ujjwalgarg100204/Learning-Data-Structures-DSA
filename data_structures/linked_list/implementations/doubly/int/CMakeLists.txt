@@ -1,0 +1,2 @@
+add_library(doubly_linkedlist_i linkedlist_i.c)
+target_link_libraries(doubly_linkedlist_i PUBLIC node_doubly_i)

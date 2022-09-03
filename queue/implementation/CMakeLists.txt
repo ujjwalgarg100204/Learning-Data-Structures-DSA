@@ -1,2 +1,0 @@
-add_library(circular_static_queue circular_static_queue.c)
-add_library(static_queue static_queue.c)

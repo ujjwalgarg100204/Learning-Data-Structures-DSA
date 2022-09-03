@@ -1,0 +1,1 @@
+add_library(node_singly_s node_singly_s.c)
