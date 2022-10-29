@@ -1,0 +1,2 @@
+add_library(doubly_circular_ll doubly_circular_ll.c)
+target_link_libraries(doubly_circular_ll PUBLIC doubly_node)

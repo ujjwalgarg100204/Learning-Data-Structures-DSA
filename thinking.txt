@@ -1,0 +1,5 @@
+proposed file tree
+data_structure
+    - stack
+        - Implementation
+        - only long and double implementation is required

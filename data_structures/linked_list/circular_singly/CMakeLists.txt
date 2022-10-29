@@ -1,0 +1,2 @@
+add_library(singly_circular_ll singly_circular_ll.c)
+target_link_libraries(singly_circular_ll PUBLIC singly_ll)
