@@ -1,0 +1,1 @@
+add_library(queue_circular_static_array_implementation static_array.c)

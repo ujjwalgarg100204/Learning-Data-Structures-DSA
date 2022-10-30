@@ -9,13 +9,13 @@ typedef struct Stack_List_S {
 
 Stack_List_S *newStack_List_S();
 
-void push_List_S(Stack_List_S *stack, ll element);
+void push_Stack_List_S(Stack_List_S *stack, ll element);
 
-bool isEmpty_List_S(Stack_List_S *stack);
+bool isEmpty_Stack_List_S(Stack_List_S *stack);
 
-ll pop_List_S(Stack_List_S *stack);
+ll pop_Stack_List_S(Stack_List_S *stack);
 
-ll getTop_List_S(Stack_List_S *stack);
+ll getTop_Stack_List_S(Stack_List_S *stack);
 
 void freeStack_List_S(Stack_List_S *stack);
 

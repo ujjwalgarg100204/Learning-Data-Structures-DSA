@@ -13,6 +13,10 @@ add_subdirectory(linked_list/doubly)
 add_subdirectory(linked_list/circular_singly)
 add_subdirectory(linked_list/circular_doubly)
 
+# add all types of queues
+add_subdirectory(queue/circular)
+add_subdirectory(queue/non-circular)
+
 # add all types of tree
 add_subdirectory(tree/avl)
 add_subdirectory(tree/bst)

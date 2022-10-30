@@ -10,13 +10,13 @@ typedef struct Stack_DyArr {
 
 Stack_DyArr *newStack_DyArr();
 
-void push_DyArr(Stack_DyArr *stack, long long int element);
+void push_Stack_DyArr(Stack_DyArr *stack, long long int element);
 
-bool isEmpty_DyArr(Stack_DyArr *stack);
+bool isEmpty_Stack_DyArr(Stack_DyArr *stack);
 
-ll pop_DyArr(Stack_DyArr *stack);
+ll pop_Stack_DyArr(Stack_DyArr *stack);
 
-ll getTop_DyArr(Stack_DyArr *stack);
+ll getTop_Stack_DyArr(Stack_DyArr *stack);
 
 void freeStack_DyArr(Stack_DyArr *stack);
 

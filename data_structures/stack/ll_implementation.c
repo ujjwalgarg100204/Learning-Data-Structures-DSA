@@ -7,19 +7,19 @@ Stack_List_S *newStack_List_S() {
     return stack;
 }
 
-void push_List_S(Stack_List_S *stack, long long int element) {
+void push_Stack_List_S(Stack_List_S *stack, long long int element) {
     addFirstList_S(stack->list, element);
 }
 
-bool isEmpty_List_S(Stack_List_S *stack) {
+bool isEmpty_Stack_List_S(Stack_List_S *stack) {
     return isEmptyList_S(stack->list);
 }
 
-ll pop_List_S(Stack_List_S *stack) {
+ll pop_Stack_List_S(Stack_List_S *stack) {
     return removeFirstList_S(stack->list);
 }
 
-ll getTop_List_S(Stack_List_S *stack) {
+ll getTop_Stack_List_S(Stack_List_S *stack) {
     return getFirstList_S(stack->list);
 }
 

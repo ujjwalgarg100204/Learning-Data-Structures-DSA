@@ -10,19 +10,19 @@ int main(void) {
 
     Stack_StArr *stack1 = newStack_StArr(size);
     for (int i = 0; i < size; i++)
-        push_StArr(stack1, arr[i]);
+        push_Stack_StArr(stack1, arr[i]);
 
 
     Stack_DyArr *stack2 = newStack_DyArr();
     for (int i = 0; i < size; i++)
-        push_DyArr(stack2, arr[i]);
+        push_Stack_DyArr(stack2, arr[i]);
 
-    while (!isEmpty_StArr(stack1))
-        printf("%lld ", pop_StArr(stack1));
+    while (!isEmpty_Stack_StArr(stack1))
+        printf("%lld ", pop_Stack_StArr(stack1));
 
     printf("\n* Done with static Stack *\n");
-    while (!isEmpty_DyArr(stack2)) {
-        printf("%lld ", pop_DyArr(stack2));
+    while (!isEmpty_Stack_DyArr(stack2)) {
+        printf("%lld ", pop_Stack_DyArr(stack2));
     }
     printf("\n* Done with dynamic Stack *\n");
 

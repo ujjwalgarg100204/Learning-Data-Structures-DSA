@@ -13,21 +13,21 @@ void freeStack_DyArr(Stack_DyArr *stack) {
     free(stack);
 }
 
-void push_DyArr(Stack_DyArr *stack, long long int element) {
+void push_Stack_DyArr(Stack_DyArr *stack, long long int element) {
     addLastArr(stack->arr, element);
     stack->top++;
 }
 
-bool isEmpty_DyArr(Stack_DyArr *stack) {
+bool isEmpty_Stack_DyArr(Stack_DyArr *stack) {
     return isEmptyArr(stack->arr);
 }
 
-ll pop_DyArr(Stack_DyArr *stack) {
-    return isEmpty_DyArr(stack) ? -1 : removeAtArr(stack->arr, stack->top--);
+ll pop_Stack_DyArr(Stack_DyArr *stack) {
+    return isEmpty_Stack_DyArr(stack) ? -1 : removeAtArr(stack->arr, stack->top--);
 }
 
-ll getTop_DyArr(Stack_DyArr *stack) {
-    return isEmpty_DyArr(stack) ? -1 : getAtArr(stack->arr, stack->top);
+ll getTop_Stack_DyArr(Stack_DyArr *stack) {
+    return isEmpty_Stack_DyArr(stack) ? -1 : getAtArr(stack->arr, stack->top);
 }
 
 

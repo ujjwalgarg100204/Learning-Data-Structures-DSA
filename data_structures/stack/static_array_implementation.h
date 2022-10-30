@@ -13,15 +13,15 @@ typedef struct Stack_StArr {
 
 Stack_StArr *newStack_StArr(int capacity);
 
-bool isFull_StArr(Stack_StArr *stack);
+bool isFull_Stack_StArr(Stack_StArr *stack);
 
-bool push_StArr(Stack_StArr *stack, long long int element);
+bool push_Stack_StArr(Stack_StArr *stack, long long int element);
 
-bool isEmpty_StArr(Stack_StArr *stack);
+bool isEmpty_Stack_StArr(Stack_StArr *stack);
 
-ll getTop_StArr(Stack_StArr *stack);
+ll getTop_Stack_StArr(Stack_StArr *stack);
 
-ll pop_StArr(Stack_StArr *stack);
+ll pop_Stack_StArr(Stack_StArr *stack);
 
 void freeStack_StArr(Stack_StArr *stack);
 
