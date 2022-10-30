@@ -1,33 +1,35 @@
 #include <stdio.h>
-#include "data_structures/linked_list/circular_doubly/doubly_circular_ll.h"
+#include "data_structures/stack/static_array_implementation.h"
+#include "data_structures/stack/dynamic_array_implementation.h"
 
 void printArr(long long int *arr, int len);
 
 int main(void) {
-    LinkedList_D *list = newLinkedList_DC();
     ll arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    addAllList_DC(list, arr, sizeof(arr) / sizeof(arr[0]));
-//    addFirstList_DC(list, 10);
-//    addFirstList_DC(list, 20);
-//    addFirstList_DC(list, 30);
-//    addLastList_DC(list, 40);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    addAtList_DC(list, 4, 1000);
-    addAtList_DC(list, 7, 1000);
-    addAtList_DC(list, 9, 1000);
-    addAtList_DC(list, 0, 1000);
+    Stack_StArr *stack1 = newStack_StArr(size);
+    for (int i = 0; i < size; i++)
+        push_StArr(stack1, arr[i]);
 
-    printList_DC(list);
-    printf("\n");
 
-    removeLastOccurList_DC(list, 1000);
+    Stack_DyArr *stack2 = newStack_DyArr();
+    for (int i = 0; i < size; i++)
+        push_DyArr(stack2, arr[i]);
 
-    printList_DC(list);
-    printf("\n");
+    while (!isEmpty_StArr(stack1))
+        printf("%lld ", pop_StArr(stack1));
 
-    printArr(toArrayList_DC(list), sizeList_DC(list));
+    printf("\n* Done with static Stack *\n");
+    while (!isEmpty_DyArr(stack2)) {
+        printf("%lld ", pop_DyArr(stack2));
+    }
+    printf("\n* Done with dynamic Stack *\n");
 
-    freeLinkedList_DC(list);
+    freeStack_StArr(stack1);
+    freeStack_DyArr(stack2);
+
+    return 0;
 }
 
 void printArr(long long int *arr, int len) {

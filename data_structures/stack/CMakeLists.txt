@@ -1,0 +1,3 @@
+add_library(stack_array_implementation static_array_implementation.c)
+add_library(stack_dynamic_array_implementation dynamic_array_implementation.c)
+target_link_libraries(stack_dynamic_array_implementation PUBLIC dynamic_array)
