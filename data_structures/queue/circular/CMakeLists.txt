@@ -1,2 +1,7 @@
 add_library(queue_circular_static_array_implementation static_array.c)
+
 add_library(queue_circular_ll_implementation ll_implementation.c)
+target_link_libraries(queue_circular_ll_implementation PUBLIC singly_circular_ll)
+
+add_library(queue_circular_doubly_ll_implementation doubly_ll_implementation.c)
+target_link_libraries(queue_circular_doubly_ll_implementation PUBLIC doubly_circular_ll)
