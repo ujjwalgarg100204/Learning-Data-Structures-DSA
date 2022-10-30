@@ -1,1 +1,3 @@
 add_library(queue_non_circular_static_array_implementation static_array.c)
+add_library(queue_non_circular_ll_implementation ll_implementation.c)
+target_link_libraries(queue_non_circular_ll_implementation PUBLIC singly_node)
