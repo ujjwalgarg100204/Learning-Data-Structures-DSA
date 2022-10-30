@@ -133,6 +133,8 @@ ll *toArrayList_DC(const LinkedList_D *list);
  */
 void forEachList_DC(LinkedList_D *list, void (*lambda)(ll));
 
+bool isEmptyList_DC(LinkedList_D *list);
+
 /*
  * Returns size of the linked list
  */

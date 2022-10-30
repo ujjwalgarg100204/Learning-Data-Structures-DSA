@@ -1,3 +1,9 @@
 add_library(stack_array_implementation static_array_implementation.c)
+
+# implementation of stack using dynamic array
 add_library(stack_dynamic_array_implementation dynamic_array_implementation.c)
 target_link_libraries(stack_dynamic_array_implementation PUBLIC dynamic_array)
+
+# implementation of stack using linked list
+add_library(stack_ll_implementation ll_implementation.c)
+target_link_libraries(stack_ll_implementation PUBLIC singly_ll)

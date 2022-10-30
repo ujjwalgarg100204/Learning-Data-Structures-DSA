@@ -341,6 +341,10 @@ void printList_SC(const LinkedList_S *list) {
     } while (curr != list->head);
 }
 
+bool isEmptyList_SC(LinkedList_S *list) {
+    return list->head == NULL;
+}
+
 
 void swap(long long int *a, long long int *b) {
     ll temp = *a;

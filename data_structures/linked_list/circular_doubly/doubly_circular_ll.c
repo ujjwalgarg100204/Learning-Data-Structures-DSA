@@ -357,3 +357,7 @@ void printList_DC(const LinkedList_D *list) {
     } while (curr != list->head);
 }
 
+bool isEmptyList_DC(LinkedList_D *list) {
+    return list->head == NULL;
+}
+

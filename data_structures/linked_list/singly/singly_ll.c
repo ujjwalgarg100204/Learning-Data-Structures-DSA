@@ -418,6 +418,10 @@ void printList_S(const LinkedList_S *list) {
     printf("\n");
 }
 
+bool isEmptyList_S(LinkedList_S *list) {
+    return list->head == NULL;
+}
+
 Node_S *insertAfterList_S(Node_S *node, ll data) {
     Node_S *new = newNode_S(data);
     new->next = node->next;

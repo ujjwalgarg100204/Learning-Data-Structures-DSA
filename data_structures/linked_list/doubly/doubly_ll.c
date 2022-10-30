@@ -285,3 +285,7 @@ void printList_D(const LinkedList_D *list) {
     for (Node_D *curr = list->head; curr != NULL; curr = curr->next)
         printf("%lld ", curr->data);
 }
+
+bool isEmptyList_D(LinkedList_D *list) {
+    return list->head == NULL;
+}

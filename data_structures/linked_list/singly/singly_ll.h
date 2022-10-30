@@ -172,6 +172,8 @@ ll *toArrayList_S(const LinkedList_S *list);
  */
 void forEachList_S(LinkedList_S *list, void (*lambda)(ll));
 
+bool isEmptyList_S(LinkedList_S *list);
+
 /*
  * Returns size of the linked list
  * Time Complexity: O(n)

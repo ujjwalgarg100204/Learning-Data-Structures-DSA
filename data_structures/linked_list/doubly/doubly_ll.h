@@ -122,6 +122,8 @@ bool removeLastOccurList_D(LinkedList_D *list, ll element);
  */
 bool setList_D(LinkedList_D *list, int index, ll val);
 
+bool isEmptyList_D(LinkedList_D *list);
+
 /*
  * Converts the Linked List to array and returns ptr to it
  * If list is uninitialized NULL is returned
