@@ -4,12 +4,21 @@
 
 /*
  * Returns true if index passed is valid for the given dynamic array, else false
+ *
+ * Time Complexity: O(1)
  */
 bool isValidIndex(const DynamicArray *arr, int index);
 
 /*
- * It ensures the capacity of the dynamic array to be more than or equal to
+ * ensures the capacity of the dynamic array to be more than or equal to
  * passed minimum capacity
+ *
+ * Time Complexity:
+ *      - Average: O(1)
+ *      - Worst: O(n) (for copying array elements)
+ * Auxiliary Space:
+ *      - Average: O(1)
+ *      - Worst: O(n) (for copying array elements)
  */
 void ensureCapacity(DynamicArray *arr, int minCapacity);
 
@@ -40,6 +49,8 @@ void freeDynamicArray(DynamicArray *arr) {
  * Adds the passed element at the passed index
  * If the index is invalid, it does not do anything
  * NOTE: index should be provided keeping in mind 0 indexing
+ *
+ * Time Complexity: O(n)
  */
 void addAtArr(DynamicArray *arr, int index, ll element) {
     if (!(index >= 0 && index <= arr->size)) {
@@ -59,6 +70,10 @@ void addAtArr(DynamicArray *arr, int index, ll element) {
 /*
  * Adds the passed element at the last index of the array
  * If the array is empty, it will initialize the array with given element
+ *
+ * Time Complexity:
+ *      - Average: O(1)
+ *      - Worst: O(n) (for copying of array)
  */
 void addLastArr(DynamicArray *arr, ll element) {
     ensureCapacity(arr, arr->size + 1);
@@ -69,6 +84,10 @@ void addLastArr(DynamicArray *arr, ll element) {
 /*
  * Copies the passed array elements to the dynamic array preserving the order
  * of the array
+ *
+ * Time Complexity:
+ *      - Average: O(array_length)
+ *      - Worst: O(n + array_length)
  */
 void addAllArr(DynamicArray *arr, const ll *array, int sizeOfArray) {
     if (array == NULL)
@@ -85,6 +104,8 @@ void addAllArr(DynamicArray *arr, const ll *array, int sizeOfArray) {
 /*
  * Empties the array, but does not deallocate memory for it, only sets each element of the
  * array to NULL or 0
+ *
+ * Time Complexity: O(n)
  */
 void clearArr(DynamicArray *arr) {
     memset(arr->array, 0, sizeof(ll) * arr->size);
@@ -93,17 +114,18 @@ void clearArr(DynamicArray *arr) {
 /*
  * Returns the element at the index passed, in the dynamic array
  * WARNING: If an invalid index is provided, then garbage value is returned
+ *
+ * Time Complexity: O(1)
  */
 ll getAtArr(const DynamicArray *arr, int index) {
-    if (isValidIndex(arr, index)) {
-        return arr->array[index];
-    }
+    return isValidIndex(arr, index) ? arr->array[index] : -1;
 
-    return -1;
 }
 
 /*
  * Returns true if array is empty, ie, all values are set to NULL or 0
+ *
+ * Time Complexity: O(1)
  */
 bool isEmptyArr(const DynamicArray *arr) {
     return arr->size == 0;
@@ -112,6 +134,8 @@ bool isEmptyArr(const DynamicArray *arr) {
 /*
  * Gets the last index of the val passed
  * If val does not occur in the array,then returns -1
+ *
+ * Time Complexity: O(n)
  */
 int lastIndexOfArr(const DynamicArray *arr, ll val) {
     int lastIndex = -1;
@@ -128,6 +152,9 @@ int lastIndexOfArr(const DynamicArray *arr, ll val) {
  * WARNING: returned array returned by this function is independent array which
  * does not have any relation to arr, except all the elements are the same.
  * So it needs to be deallocated separately
+ *
+ * Time Complexity: O(n)
+ * Auxiliary Space: O(n)
  */
 DynamicArray *cloneArr(const DynamicArray *arr) {
     DynamicArray *newArr = newDynamicArray();
@@ -144,6 +171,8 @@ DynamicArray *cloneArr(const DynamicArray *arr) {
 /*
  * returns first index of value at which passed val occurs, if val does not occur
  * in the array, -1 is returned
+ *
+ * Time Complexity: O(n)
  */
 int indexOfArr(const DynamicArray *arr, ll val) {
     for (int i = 0; i < arr->size; i++)
@@ -156,6 +185,8 @@ int indexOfArr(const DynamicArray *arr, ll val) {
 /*
  * Removes the element at the passed index and returns the element
  * If an invalid index is passed, GARBAGE VALUE is returned
+ *
+ * Time Complexity: O(n)
  */
 ll removeAtArr(DynamicArray *arr, int index) {
     if (!isValidIndex(arr, index)) {
@@ -177,6 +208,8 @@ ll removeAtArr(DynamicArray *arr, int index) {
 /*
  * Removes first occurrence of the val from the array, if present and returns true
  * If val is not present in the array then returns false, and does not alter the array
+ *
+ * Time Complexity: O(n)
  */
 bool removeFirstOccurArr(DynamicArray *arr, ll val) {
     for (int i = 0; i < arr->size; i++) {
@@ -191,6 +224,8 @@ bool removeFirstOccurArr(DynamicArray *arr, ll val) {
 /*
  * Removes a range of indices from the given array (excluding toIndex)
  * WARNING: if indices provided are not valid, func does not alter the array in any way
+ *
+ * Time Complexity: O(n)
  */
 void removeRangeArr(DynamicArray *arr, int fromIndex, int toIndex) {
     // validate the indexes
@@ -209,6 +244,8 @@ void removeRangeArr(DynamicArray *arr, int fromIndex, int toIndex) {
 /*
  * Sets the passed val at the passed index in the array and returns the val
  * If index is invalid, then list is left unaltered, and GARBAGE VALUE != val is returned
+ *
+ * Time Complexity: O(1)
  */
 ll setAtArr(DynamicArray *arr, int index, ll val) {
     if (isValidIndex(arr, index)) {
@@ -221,6 +258,9 @@ ll setAtArr(DynamicArray *arr, int index, ll val) {
 /*
  * Returns a dynamic array with all the elements that lie within the given range (end excluded)
  * WARNING: if indices provided are not valid, NULL is returned
+ *
+ * Time Complexity: O(toIndex - fromIndex)
+ * Auxiliary Space: O(toIndex - fromIndex)
  */
 DynamicArray *subArrayArr(const DynamicArray *arr, int fromIndex, int toIndex) {
     if (!(isValidIndex(arr, fromIndex) && (isValidIndex(arr, toIndex - 1 >= 0 ? toIndex - 1 : 0)) &&
@@ -239,6 +279,8 @@ DynamicArray *subArrayArr(const DynamicArray *arr, int fromIndex, int toIndex) {
 
 /*
  * Returns current size of the Dynamic Array (0 >= size)
+ *
+ * Time Complexity: O(1)
  */
 int sizeArr(const DynamicArray *arr) {
     return arr->size;
@@ -247,6 +289,8 @@ int sizeArr(const DynamicArray *arr) {
 /*
  * Used to make size of array to provided size (<= size)
  * If passed size is more than the current size, nothing happens
+ *
+ * Time Complexity: O(1)
  */
 void trimToSizeArr(DynamicArray *arr, int size) {
     if (size <= arr->size && size > 0) {
@@ -254,7 +298,17 @@ void trimToSizeArr(DynamicArray *arr, int size) {
     }
 }
 
-
+/*
+ * ensures the capacity of the dynamic array to be more than or equal to
+ * passed minimum capacity
+ *
+ * Time Complexity:
+ *      - Average: O(1)
+ *      - Worst: O(n) (for copying array elements)
+ * Auxiliary Space:
+ *      - Average: O(1)
+ *      - Worst: O(n) (for copying array elements)
+ */
 void ensureCapacity(DynamicArray *arr, int minCapacity) {
     // min capacity is already satisfied
     if (minCapacity <= arr->capacity) {
@@ -269,8 +323,11 @@ void ensureCapacity(DynamicArray *arr, int minCapacity) {
     arr->array = realloc(arr->array, sizeof(ll) * arr->capacity);
 }
 
+/*
+ * Returns true if index passed is valid for the given dynamic array, else false
+ *
+ * Time Complexity: O(1)
+ */
 bool isValidIndex(const DynamicArray *arr, int index) {
     return index < arr->size && index >= 0;
 }
-
-

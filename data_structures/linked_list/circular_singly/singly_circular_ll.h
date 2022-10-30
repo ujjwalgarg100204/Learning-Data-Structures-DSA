@@ -12,7 +12,7 @@ typedef struct LinkedList_SC {
 
 
 /*
- * Creates a new linked list and returns a ptr to new list
+ * Creates a new Singly Circular linked list and returns a ptr to new list
  */
 LinkedList_S *newSinglyLinkedList_SC();
 
@@ -26,7 +26,7 @@ void freeLinkedList_SC(LinkedList_S *list);
 /*
  * Adds element at the specified index
  * Returns true if addition of new element is successful else false
- * Time Complexity: O(index)
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
 bool addAtList_SC(LinkedList_S *list, int index, ll element);
@@ -174,6 +174,10 @@ ll *toArrayList_SC(const LinkedList_S *list);
  */
 void forEachList_SC(LinkedList_S *list, void (*lambda)(ll));
 
+/*
+ * Returns true if list is empty ,ie, head is NULL or not
+ * Time Complexity: O(1)
+ */
 bool isEmptyList_SC(LinkedList_S *list);
 
 /*

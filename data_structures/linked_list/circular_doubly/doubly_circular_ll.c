@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include "doubly_circular_ll.h"
 
+/* Helper Functions */
+
+/*
+ * Frees all memory for all the nodes in the list and sets head of
+ * list to NULL
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 void freeAllNodesList_DC(LinkedList_D *list) {
     if (list->head == NULL) return;
 
@@ -13,6 +21,9 @@ void freeAllNodesList_DC(LinkedList_D *list) {
     } while (curr != list->head);
 }
 
+/*
+ * Swaps values of two long integers
+ */
 void swap(ll *a, ll *b) {
     ll temp = *a;
     *a = *b;
@@ -21,6 +32,7 @@ void swap(ll *a, ll *b) {
 
 /*
  * Adds a new node after the given node
+ * Does not do anything if node is passed as NULL
  */
 void addNodeAfterList_DC(Node_D *node, ll element) {
     if (node == NULL) return;
@@ -48,6 +60,7 @@ void addNodeBeforeList_DC(Node_D *node, ll element) {
 
 /*
  * Deletes the given node from the doubly linked list
+ * Does not do anything if node is passed as NULL
  */
 void deleteNodeList_DC(Node_D *node) {
     if (node == NULL) return;
@@ -66,8 +79,11 @@ Node_D *iterateToNodeAtList_DC(Node_D *node, int after) {
     return curr;
 }
 
+
+/* Main functions offered by Doubly Circular Linked List*/
+
 /*
- * Creates a new Doubly linked list and returns a ptr to new list
+ * Creates a new Doubly Circular linked list and returns a ptr to new list
  */
 LinkedList_D *newLinkedList_DC() {
     LinkedList_D *list = malloc(sizeof(LinkedList_D));
@@ -77,7 +93,7 @@ LinkedList_D *newLinkedList_DC() {
 
 /*
  * Frees the linked list and frees each node in the list
- * Time Complexity: O(n) operation
+ * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
 void freeLinkedList_DC(LinkedList_D *list) {
@@ -85,6 +101,12 @@ void freeLinkedList_DC(LinkedList_D *list) {
     free(list);
 }
 
+/*
+ * Adds element at the specified index
+ * Returns true if addition of new element is successful else false
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 bool addAtList_DC(LinkedList_D *list, int index, ll element) {
     if (index == 0) {
         addFirstList_DC(list, element);
@@ -105,6 +127,12 @@ bool addAtList_DC(LinkedList_D *list, int index, ll element) {
     return true;
 }
 
+/*
+ * Adds element at the last of the list
+ * Can be used to initialize the list
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 void addLastList_DC(LinkedList_D *list, long long int element) {
     if (list->head == NULL) {
         addFirstList_DC(list, element);
@@ -113,6 +141,13 @@ void addLastList_DC(LinkedList_D *list, long long int element) {
     addNodeBeforeList_DC(list->head, element);
 }
 
+/*
+ * Adds all the elements of the array to the linked list, in the same order as they
+ * occur
+ * Returns true if addition is successful else false
+ * Time Complexity: O(m+n)
+ * Space Complexity: O(1)
+ */
 bool addAllList_DC(LinkedList_D *list, const long long int *arr, int lengthOfArr) {
     if (arr == NULL) return false;
 
@@ -137,6 +172,12 @@ bool addAllList_DC(LinkedList_D *list, const long long int *arr, int lengthOfArr
     return true;
 }
 
+/*
+ * Adds element at the first position of the list
+ * Can be used to initialize the list
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 void addFirstList_DC(LinkedList_D *list, long long int element) {
     if (list->head == NULL) {
         // empty list
@@ -150,11 +191,21 @@ void addFirstList_DC(LinkedList_D *list, long long int element) {
     swap(&list->head->data, &list->head->next->data);
 }
 
+/*
+ * Empties the list
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 void clearList_DC(LinkedList_D *list) {
     freeAllNodesList_DC(list);
     list->head = NULL;
 }
 
+/*
+ * Creates a copy of the list passed and returns the new copy of list
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 LinkedList_D *cloneList_DC(const LinkedList_D *list) {
     if (list->head == NULL) return NULL;
 
@@ -173,6 +224,11 @@ LinkedList_D *cloneList_DC(const LinkedList_D *list) {
     return clone;
 }
 
+/*
+ * Returns true if element is present in list else false
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 bool containsList_DC(const LinkedList_D *list, long long int element) {
     Node_D *curr = list->head;
     do {
@@ -182,16 +238,34 @@ bool containsList_DC(const LinkedList_D *list, long long int element) {
     return false;
 }
 
+/*
+ * Returns element present at first position
+ * NOTE: If list is uninitialized, GARBAGE VALUE is returned
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 ll getFirstList_DC(const LinkedList_D *list) {
     if (list->head == NULL) return -1;
     return list->head->data;
 }
 
+/*
+ * Returns last element present at last position of the list
+ * NOTE: If list is uninitialized, GARBAGE VALUE is returned
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 ll getLastList_DC(const LinkedList_D *list) {
     if (list->head == NULL) return -1;
     return list->head->prev->data;
 }
 
+/*
+ * Returns element present at the specified index
+ * NOTE: If list is uninitialized or index passed is invalid, GARBAGE VALUE is returned
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 ll getAtList_DC(const LinkedList_D *list, int index) {
     if (index == 0) return getFirstList_DC(list);
     else if (list->head == NULL) return -1;
@@ -204,6 +278,13 @@ ll getAtList_DC(const LinkedList_D *list, int index) {
     return curr != list->head ? curr->data : -1;
 }
 
+/*
+ * Returns the last index at which specified element is present
+ * -1 is returned if element is not present in the list or if the list is
+ * uninitialized
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 int lastIndexOfList_DC(const LinkedList_D *list, long long int element) {
     if (list->head == NULL) {
         return -1;
@@ -221,6 +302,12 @@ int lastIndexOfList_DC(const LinkedList_D *list, long long int element) {
     return lastIndex;
 }
 
+/*
+ * Removes the first element from the list and returns the element
+ * NOTE: A GARBAGE VALUE is returned if list is uninitialized
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 ll removeFirstList_DC(LinkedList_D *list) {
     if (list->head == NULL) return -1;
     else if (list->head == list->head->next) {
@@ -236,6 +323,12 @@ ll removeFirstList_DC(LinkedList_D *list) {
     return toReturn;
 }
 
+/*
+ * Removes the last element from the list and returns the element
+ * NOTE: A GARBAGE VALUE is returned if list is  uninitialized
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
 ll removeLastList_DC(LinkedList_D *list) {
     if (list->head == NULL) return -1;
     else if (list->head == list->head->next) return removeFirstList_DC(list);
@@ -245,6 +338,12 @@ ll removeLastList_DC(LinkedList_D *list) {
     return toReturn;
 }
 
+/*
+ * Removes first occurrence of the element in list, and returns true if successful
+ * if the element is not present in the list, then returns false
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 bool removeFirstOccurList_DC(LinkedList_D *list, long long int element) {
     if (list->head == NULL) return -1;
     else if (list->head->data == element) {
@@ -263,6 +362,12 @@ bool removeFirstOccurList_DC(LinkedList_D *list, long long int element) {
     return true;
 }
 
+/*
+ * Remove element at the given index and returns the element
+ * If index is invalid garbage value is returned
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 ll removeAtList_DC(LinkedList_D *list, int index) {
     if (list->head == NULL) return -1;
     else if (index == 0) return removeFirstList_DC(list);
@@ -279,6 +384,13 @@ ll removeAtList_DC(LinkedList_D *list, int index) {
     return toReturn;
 }
 
+/*
+ * Removes the last Occurrence of the element in list, and returns the element
+ * If the element is not present in the list, then a GARBAGE VALUE other than the element
+ * is returned
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 bool removeLastOccurList_DC(LinkedList_D *list, long long int element) {
     if (list->head == NULL) return false;
 
@@ -296,6 +408,12 @@ bool removeLastOccurList_DC(LinkedList_D *list, long long int element) {
     return true;
 }
 
+/*
+ * Sets element at given index, to provided value
+ * Returns true if operation of setting is successful else false
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 bool setList_DC(LinkedList_D *list, int index, long long int val) {
     if (list->head == NULL) return false;
 
@@ -311,6 +429,12 @@ bool setList_DC(LinkedList_D *list, int index, long long int val) {
     return true;
 }
 
+/*
+ * Converts the Linked List to array and returns ptr to it
+ * If list is uninitialized NULL is returned
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
 ll *toArrayList_DC(const LinkedList_D *list) {
     if (list->head == NULL) return NULL;
 
@@ -324,6 +448,11 @@ ll *toArrayList_DC(const LinkedList_D *list) {
     return arr;
 }
 
+/*
+ * Calls the passed function for each element in the list
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 void forEachList_DC(LinkedList_D *list, void (*lambda)(long long int)) {
     if (list == NULL) return;
     Node_D *curr = list->head;
@@ -333,6 +462,11 @@ void forEachList_DC(LinkedList_D *list, void (*lambda)(long long int)) {
     } while (curr != list->head);
 }
 
+/*
+ * Returns size of the linked list
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 int sizeList_DC(const LinkedList_D *list) {
     int length = 0;
     Node_D *curr = list->head;
@@ -344,6 +478,11 @@ int sizeList_DC(const LinkedList_D *list) {
     return length;
 }
 
+/*
+ * Prints the list in same line separated by space
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 void printList_DC(const LinkedList_D *list) {
     if (list->head == NULL) {
         printf("(null)");
@@ -357,6 +496,10 @@ void printList_DC(const LinkedList_D *list) {
     } while (curr != list->head);
 }
 
+/*
+ * Returns true if list is empty ,ie, head is NULL or not
+ * Time Complexity: O(1)
+ */
 bool isEmptyList_DC(LinkedList_D *list) {
     return list->head == NULL;
 }

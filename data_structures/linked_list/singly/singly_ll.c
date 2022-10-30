@@ -2,24 +2,44 @@
 #include <stdio.h>
 #include "singly_ll.h"
 
+/* Helpers Functions */
+
 /*
  * Inserts a new node with passed data after given node
  * Will NOT work if node is NULL
  */
-Node_S *insertAfterList_S(Node_S *node, ll data);
+Node_S *insertAfterList_S(Node_S *node, ll data) {
+    Node_S *new = newNode_S(data);
+    new->next = node->next;
+    node->next = new;
+    return node;
+}
 
 /*
  * Removes a node after the provided node
  * Will NOT work if node provided has next as NULL
  */
-void removeNextList_S(Node_S *node);
-
+void removeNextList_S(Node_S *node) {
+    Node_S *toBeDeleted = node->next;
+    Node_S *next = toBeDeleted->next;
+    freeNode_S(toBeDeleted);
+    node->next = next;
+}
 
 /*
  * Frees all memory for all the nodes in the list and sets head of
  * list to NULL
  */
-void freeAllNodesList_S(LinkedList_S *list);
+void freeAllNodesList_S(LinkedList_S *list) {
+    while (list->head != NULL) {
+        Node_S *next = list->head->next;
+        freeNode_S(list->head);
+        list->head = next;
+    }
+}
+
+
+/* Main functions of Linked List */
 
 /*
  * Creates a new linked list and returns a ptr to new list
@@ -96,7 +116,7 @@ void addLastList_S(LinkedList_S *list, long long int element) {
  * Adds all the elements of the array to the linked list, in the same order as they
  * occur
  * Returns true if addition is successful else false
- * Time Complexity: O(m+n)
+ * Time Complexity: O(n + lengthOfArr)
  * Space Complexity: O(1)
  */
 bool addAllList_S(LinkedList_S *list, const long long int *arr, int lengthOfArr) {
@@ -408,6 +428,11 @@ int sizeList_S(const LinkedList_S *list) {
     return length;
 }
 
+/*
+ * Prints the list in same line separated by space
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 void printList_S(const LinkedList_S *list) {
     if (list == NULL) {
         printf("(null)\n");
@@ -418,31 +443,17 @@ void printList_S(const LinkedList_S *list) {
     printf("\n");
 }
 
+/*
+ * Returns true if list is empty ,ie, head is NULL or not
+ * Time Complexity: O(n)
+ */
 bool isEmptyList_S(LinkedList_S *list) {
     return list->head == NULL;
 }
 
-Node_S *insertAfterList_S(Node_S *node, ll data) {
-    Node_S *new = newNode_S(data);
-    new->next = node->next;
-    node->next = new;
-    return node;
-}
 
-void removeNextList_S(Node_S *node) {
-    Node_S *toBeDeleted = node->next;
-    Node_S *next = toBeDeleted->next;
-    freeNode_S(toBeDeleted);
-    node->next = next;
-}
 
-void freeAllNodesList_S(LinkedList_S *list) {
-    while (list->head != NULL) {
-        Node_S *next = list->head->next;
-        freeNode_S(list->head);
-        list->head = next;
-    }
-}
+
 
 
 

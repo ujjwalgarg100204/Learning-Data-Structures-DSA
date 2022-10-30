@@ -11,6 +11,7 @@ typedef struct LinkedList_S {
 
 /*
  * Creates a new linked list and returns a ptr to new list
+ * S -> Singly
  */
 LinkedList_S *newSinglyLinkedList_S();
 
@@ -41,7 +42,7 @@ void addLastList_S(LinkedList_S *list, ll element);
  * Adds all the elements of the array to the linked list, in the same order as they
  * occur
  * Returns true if addition is successful else false
- * Time Complexity: O(m+n)
+ * Time Complexity: O(n + lengthOfArr)
  * Space Complexity: O(1)
  */
 bool addAllList_S(LinkedList_S *list, const ll *arr, int lengthOfArr);
@@ -167,11 +168,15 @@ ll *toArrayList_S(const LinkedList_S *list);
 
 /*
  * Calls the passed function for each element in the list
- * Time Complexity: O(n)
+ * Time Complexity: O(n * O(lambda function))
  * Space Complexity: O(1)
  */
 void forEachList_S(LinkedList_S *list, void (*lambda)(ll));
 
+/*
+ * Returns true if list is empty ,ie, head is NULL or not
+ * Time Complexity: O(n)
+ */
 bool isEmptyList_S(LinkedList_S *list);
 
 /*
