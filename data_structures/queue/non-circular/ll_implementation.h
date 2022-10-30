@@ -12,7 +12,7 @@ typedef struct Queue_List_S {
 
 Queue_List_S *newQueue_List_S();
 
-void freeQueue_List_s(Queue_List_S *queue);
+void freeQueue_List_S(Queue_List_S *queue);
 
 bool isEmpty_Queue_List_S(Queue_List_S *queue);
 
