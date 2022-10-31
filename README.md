@@ -17,7 +17,7 @@
     <img src="readme_assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">DSA in <u>C<u></h3>
+<h3 align="center">DSA in <u>C</u></h3>
 
   <p align="center">
     Data Structures and Algorithms in C programming language
@@ -118,9 +118,8 @@ added. [Source](https://www.geeksforgeeks.org/queue-data-structure/)
 
 * Using
   [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c)[[code](data_structures/queue/non-circular/static_array.c)]
-*
-
-Using [Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/) [[See code](data_structures/queue/non-circular/ll_implementation.c)]
+* Using
+  [Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/) [[See code](data_structures/queue/non-circular/ll_implementation.c)]
 
 ### Circular Queue
 
@@ -134,13 +133,10 @@ queue. [Source](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-
 
 * Using
   [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](data_structures/queue/circular/static_array.c)]
-*
-
-Using [Singular Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/ll_implementation.c)]
-
-*
-
-Using [Doubly Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/doubly_ll_implementation.c)]
+* Using
+  [Singular Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/ll_implementation.c)]
+* Using
+  [Doubly Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/doubly_ll_implementation.c)]
 
 ## Dynamic Arrays
 
@@ -208,8 +204,10 @@ Clone the repo
 
 * To use any data structure simple include it in your source file by seeing through _easy to find file structure_ as
   shown
-  [Stack Example](readme_assets/stack example.jpg)
-  [Singly Circular](readme_assets/singly circular example.jpg)
+
+  ![Stack Example](readme_assets/stack example.jpg)
+  ![Singly Circular](readme_assets/singly circular example.jpg)
+
   _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/issues) for a full list of
@@ -254,7 +252,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Ujjwal Garg - [@linkedin_handle](linkedin-url) - ujjwalgarg100204@gmail.com
+Ujjwal Garg - [@linkedin_handle][linkedin-url] - ujjwalgarg100204@gmail.com
 
 Project
 Link: [https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA)
