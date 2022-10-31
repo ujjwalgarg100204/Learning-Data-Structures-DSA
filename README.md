@@ -1,6 +1,74 @@
-# Learning-Data-Structures-DSA
+<a name="readme-top"></a>
 
-In this repository, I implement all data structures in C programming language, including their applications
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA">
+    <img src="readme_assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">DSA in <u>C<u></h3>
+
+  <p align="center">
+    project_description
+    <br />
+    <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA">View Demo</a>
+    ·
+    <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/issues">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+This projects aims at making a data structures and algorithms library in C. As C does not come with basic data
+structures like **Stack**, **Linked List** etc, out of the box, I wanted to implement each data structure to the best of
+my knowledge and let internet integrate it in their project using [![Cmake][cmake]][Cmake-url].
 
 ## Stack
 
@@ -89,3 +157,142 @@ pointers [[Source](https://www.geeksforgeeks.org/data-structures/linked-list/)]
 ![linked-list-gif](https://assets.digitalocean.com/articles/alligator/js/linked-lists-implementation/linked-list-insert.gif)
 
 ### Implementation [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/linked_list/implementation/linked_list.c#L6)]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* [![C][C]][C-url]
+* [![Cmake][cmake]][Cmake-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To include it in your project simply download the code and use it as shown
+
+### Prerequisites
+
+* Cmake [\[Download Cmake\]](https://cmake.org/download/)
+
+### Installation
+
+Clone the repo
+
+   ```sh
+   git clone https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA.git
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+* To use any data structure simple include it in your source file by seeing through _easy to find file structure_ as
+  shown
+  [Stack Example](readme_assets/stack example.jpg)
+  [Singly Circular](readme_assets/singly circular example.jpg)
+  _For more examples, please refer to the [Documentation](https://example.com)_
+
+See the [open issues](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/issues) for a full list of
+proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
+simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+
+## Contact
+
+Ujjwal Garg - [@linkedin_handle](linkedin-url) - ujjwalgarg100204@gmail.com
+
+Project
+Link: [https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+* [Flaticon](https://www.flaticon.com/) for providing project logo
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/ujjwalgarg100204/Learning-Data-Structures-DSA.svg?style=for-the-badge
+
+[contributors-url]: https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/ujjwalgarg100204/Learning-Data-Structures-DSA.svg?style=for-the-badge
+
+[forks-url]: https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/ujjwalgarg100204/Learning-Data-Structures-DSA.svg?style=for-the-badge
+
+[stars-url]: https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/ujjwalgarg100204/Learning-Data-Structures-DSA.svg?style=for-the-badge
+
+[issues-url]: https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/issues
+
+[license-shield]: https://img.shields.io/github/license/ujjwalgarg100204/Learning-Data-Structures-DSA.svg?style=for-the-badge
+
+[license-url]: https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/master/LICENSE.txt
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+[linkedin-url]: https://linkedin.com/in/ujjwal-garg-3a5639243
+
+[Cmake]: https://img.shields.io/badge/cmake-064F8C?style=for-the-badge&logo=cmake&logoColor=4FC08D
+
+[Cmake-url]: https://cmake.org/documentation
+
+[C]: https://img.shields.io/badge/The%20C%20Programming%20Language-000000?style=for-the-badge&logo=c&logoColor=white
+
+[C-url]: https://en.wikipedia.org/wiki/C_(programming_language)
