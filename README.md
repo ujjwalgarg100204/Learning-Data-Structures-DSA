@@ -80,29 +80,29 @@ be LIFO(Last In First Out) or FILO(First In Last Out). [Source](https://www.geek
 ### Implementation of Stack
 
 * Using
-  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[See code](stack/implementation/static_stack.c)]
+  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[See code](data_structures/stack/static_array_implementation.c)]
 * Using
-  [Dynamic array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[See code](stack/implementation/dynamic_stack.c)]
+  [Dynamic array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[See code](data_structures/stack/dynamic_array_implementation.c)]
 * Using
-  [Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/) [[See code](stack/implementation/linked_stack.c)]
+  [Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/) [[See code](data_structures/stack/ll_implementation.c)]
 
 ### Applications
 
 * Whether the expression has balanced
-  bracket [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L21)]
+  bracket [[code]()]
 * [Infix](https://www.codingninjas.com/blog/2021/09/06/infix-postfix-and-prefix-conversion/) to post fix
-  conversion [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L50)]
+  conversion [[code]()]
 * [Infix](https://www.codingninjas.com/blog/2021/09/06/infix-postfix-and-prefix-conversion/) to pre fix
-  conversion [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L93)]
+  conversion [[code]()]
 * Evaluation of
-  prefix [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L136)]
+  prefix [[code]()]
   and
-  postfix [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/stack/application/expression_parser.c#L157)]
+  postfix [[code]()]
   expression
 * Conversion of decimal to
-  binary [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L25)]
+  binary [[code]()]
 * Checking if the string
-  is [palindrome](https://www.merriam-webster.com/dictionary/palindrome) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f5496ffae8d7983e3e379aa09f351aa1c9f7a4b9/stack/application/small_applications_stack.c#L7)]
+  is [palindrome](https://www.merriam-webster.com/dictionary/palindrome) [[code]()]
 
 ## Queue
 
@@ -117,7 +117,10 @@ added. [Source](https://www.geeksforgeeks.org/queue-data-structure/)
 ### Implementation of Queue
 
 * Using
-  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c)[[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/queue/implementation/static_queue.c#L7)]
+  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c)[[code](data_structures/queue/non-circular/static_array.c)]
+*
+
+Using [Linked List](https://www.geeksforgeeks.org/data-structures/linked-list/) [[See code](data_structures/queue/non-circular/ll_implementation.c)]
 
 ### Circular Queue
 
@@ -130,7 +133,14 @@ queue. [Source](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-
 ### Implementation
 
 * Using
-  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/2fa81f4d6d6092537599b2c8234ece52bc5a04f3/queue/implementation/circular_static_queue.c#L5)]
+  [Static array](https://stackoverflow.com/questions/2672085/what-is-the-difference-between-static-and-dynamic-arrays-in-c) [[code](data_structures/queue/circular/static_array.c)]
+*
+
+Using [Singular Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/ll_implementation.c)]
+
+*
+
+Using [Doubly Circular Linked List](https://www.geeksforgeeks.org/circular-linked-list/) [[code](data_structures/queue/circular/doubly_ll_implementation.c)]
 
 ## Dynamic Arrays
 
@@ -143,10 +153,7 @@ currSize ahead of time. [[Source](https://www.interviewcake.com/concept/java/dyn
 
 ### Implementation
 
-* Using Dynamic memory
-  allocation [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/95776a2bd8be4f5e5da116fc6959bf2b7ad6c54f/dynamic_array/implementation/dynamic_array.c#L10)]
-* Using Static
-  array [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/d9fc6b218cc9bc2f60345c20c7b73401dede5896/dynamic_array/implementation/dynamic_array_using_static.c#L20)]
+* Using Dynamic memory allocation [[code](data_structures/dynamic_array/array.c)]
 
 ## Linked List
 
@@ -156,7 +163,12 @@ pointers [[Source](https://www.geeksforgeeks.org/data-structures/linked-list/)]
 
 ![linked-list-gif](https://assets.digitalocean.com/articles/alligator/js/linked-lists-implementation/linked-list-insert.gif)
 
-### Implementation [[code](https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA/blob/f331774d017bd1c7ea811fe311c0bc7366495fc1/linked_list/implementation/linked_list.c#L6)]
+### Implementation
+
+* Singly Linked List [[code](data_structures/linked_list/singly/singly_ll.c)]
+* Doubly Linked List [[code](data_structures/linked_list/doubly/doubly_ll.c)]
+* Singly **Circular** Linked List [[code](data_structures/linked_list/circular_singly/singly_circular_ll.c)]
+* Doubly **Circular** Linked List [[code](data_structures/linked_list/circular_doubly/doubly_circular_ll.c)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +178,6 @@ pointers [[Source](https://www.geeksforgeeks.org/data-structures/linked-list/)]
 * [![Cmake][cmake]][Cmake-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -256,7 +267,8 @@ Link: [https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA](https:/
 
 ## Acknowledgments
 
-* [Flaticon](https://www.flaticon.com/) for providing project logo
+* <a href="https://www.flaticon.com/free-icons/structure" title="structure icons">Structure icons created by Freepik -
+  Flaticon</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
