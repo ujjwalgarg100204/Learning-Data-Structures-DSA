@@ -20,7 +20,7 @@
 <h3 align="center">DSA in <u>C<u></h3>
 
   <p align="center">
-    project_description
+    Data Structures and Algorithms in C programming language
     <br />
     <a href="https://github.com/ujjwalgarg100204/Learning-Data-Structures-DSA"><strong>Explore the docs »</strong></a>
     <br />
