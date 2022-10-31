@@ -205,8 +205,8 @@ Clone the repo
 * To use any data structure simple include it in your source file by seeing through _easy to find file structure_ as
   shown
 
-  ![Stack Example](readme_assets/stack example.jpg)
-  ![Singly Circular](readme_assets/singly circular example.jpg)
+  ![Stack Example](readme_assets/stack_example.jpg)
+  ![Singly Circular](readme_assets/singly_circular_example.jpg)
 
   _For more examples, please refer to the [Documentation](https://example.com)_
 
